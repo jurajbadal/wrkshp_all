@@ -10,4 +10,5 @@ docker network prune
 
 #2 Copy from github a clone using a link
 #3 open POVELY.txt
+Lets update existing commands using reverse enginiering
 
