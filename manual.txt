@@ -12,3 +12,9 @@ docker network prune
 #3 open POVELY.txt
 Lets update existing commands using reverse enginiering
 
+#4 running commands form subfolder newman, also from root
+
+#5 checking CI/CD pipelines on lectors complex
+
+#6 preparing another part of multiframework alone with lectors help
+
