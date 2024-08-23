@@ -1,0 +1,71 @@
+#1 run all together
+docker-compose up
+
+#2 run each tool independently
+docker-compose up playwright
+docker-compose up k6
+docker-compose up newman
+docker-compose up python
+docker-compose up robotframework
+
+#3 Scale specific services
+docker-compose up --scale k6=3
+
+#4 Benefits of this approach:
+Each container is smaller and more focused.
+You can update or modify each component independently.
+It's easier to manage dependencies for each tool separately.
+You can run only the services you need for a particular task.
+
+#5 Considerations:
+Ensure proper networking if the services need to communicate.
+You may need to set up shared volumes or other mechanisms 
+for sharing data between containers if required.
+
+#6 Resume
+This approach provides a more flexible, maintainable, and scalable 
+solution, especially for complex testing or automation scenarios.
+
+#HOW TO work from each folder:
+#7 builds from each own folder
+docker build -t k6-all .
+docker build -t newman-all .
+docker build -t python39-all .
+docker build -t robotframework-all .
+docker build -t cypress-all .
+
+#8 How to run each of them
+docker run --rm -i k6-all run script.js
+docker run --rm -v ${PWD}:/app newman-all run mycollection.json
+docker run --rm -i python39-all python hello_world.py
+docker run --rm -v $(pwd)/tests:/tests -v $(pwd)/results:/results robotframework-all
+docker run -it -v $PWD:/cypress -w /cypress cypress-all npx cypress run
+
+#HOW to run it from root folder using COMPOSE
+#9 BUILD with compose
+docker-compose build k6
+docker-compose build newman
+docker-compose build python39
+docker-compose build robotframework
+docker-compose build cypress
+
+#10 RUN BUILDS with compose
+docker-compose run --rm k6 run script.js
+docker-compose run --rm newman run mycollection.json
+docker-compose run --rm python39 python hello_world.py
+docker-compose run --rm robotframework
+docker-compose run --rm cypress 
+
+
+#11 how to build and run all from the root folder using COMPOSE
+docker-compose build
+
+docker-compose up
+
+#12 Run locallyfrom subfolder with html report
+docker run --rm -v "${PWD}/playwright-report:/app/playwright-report" my-playwright-image:latest npm run test-html-report
+
+#12 how to pull build at the beginning from sources using DOCKER COMPOSE
+docker-compose up -d grafana influxdb
+
+

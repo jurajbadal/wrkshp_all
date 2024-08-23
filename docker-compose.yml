@@ -1,0 +1,34 @@
+services:
+  playwright:
+    build: ./playwright
+    volumes:
+      - ./playwright:/app
+
+  k6:
+    build: ./K6
+    volumes:
+      - ${PWD}/k6:/app
+
+  newman:
+    build: ./newman
+    volumes:
+      - ./newman:/app
+
+  python39:
+    build: ./python39
+    volumes:
+      - ./python39:/app
+
+  robotframework:
+    build: ./robotframework
+    volumes:
+      - ./robotframework:/tests
+      - ./robotframework/results:/results
+
+  cypress:
+    build: ./cypress
+    volumes:
+      - ./cypress:cypress/e2e   
+    command: npx cypress run 
+
+  

@@ -1,0 +1,13 @@
+#1 How to check usage of VM 
+VM_STAT
+docker system df
+docker builder prune
+docker volume prune
+
+# how to check docker networking
+docker network ls
+docker network prune
+
+#2 Copy from github a clone using a link
+#3 open POVELY.txt
+
