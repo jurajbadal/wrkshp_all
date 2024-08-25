@@ -1,16 +1,15 @@
-FROM cypress/included
-
-WORKDIR /e2e
-
-COPY ./cypress .
-COPY cypress.config.js .
-COPY package.json .
-COPY package-lock.json .
-
-
-# Add cypress package to package.json
-RUN npm install --save-dev cypress@13.13.3
-
+# Stage 1: Build and install dependencies
+FROM cypress/included AS build
+WORKDIR /cypress/e2e
+COPY package*.json ./
 RUN npm install
+RUN npm prune
+RUN npm install cypress --save-dev
 
+# Stage 2: Copy necessary files and run Cypress
+FROM cypress/included
+WORKDIR /cypress/e2e
+COPY --from=build /cypress/e2e/node_modules ./node_modules
+COPY cypress.config.js .
+COPY ./cypress .
 CMD ["npx", "cypress", "run"]

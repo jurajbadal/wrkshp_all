@@ -1,30 +1,14 @@
 {
-  "name": "cypress-docker",
+  "name": "cypress",
   "version": "1.0.0",
-  "description": "",
+  "description": "cypress",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "mkdir -p cypress/reports && rm -R -f cypress/reports/* && mkdir cypress/reports/mochareports",
-    "pretest": "npm run clean:reports",
-    "scripts": "cypress run",
-    "chrome:scripts": "cypress run --browser chrome ",
-    "firefox:scripts": "cypress run --browser firefox ",
-    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
-    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
-    "posttest": "npm run combine-reports && npm run generate-report",
-    "test": "npm run scripts || npm run posttest",
-    "chrome:test": "npm run pretest && npm run chrome:scripts || npm run posttest",
-    "firefox:test": "npm run pretest && npm run firefox:scripts || npm run posttest"
+    "test": "cypress run"
   },
-  "keywords": [],
-  "author": "QA BOX <qabox@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "cypress": "^13.13.3",
-    "cypress-multi-reporters": "^1.4.0",
-    "mocha": "^8.2.1",
-    "mochawesome": "^6.2.1",
-    "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.1.0"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.3"
   }
 }

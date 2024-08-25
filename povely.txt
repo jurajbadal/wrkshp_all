@@ -44,6 +44,7 @@ docker run --rm -v $(pwd)/reports:/newman/reports newman-all run mycollection.js
 docker run --rm -i python39-all python hello_world.py
 docker run --rm -v $(pwd)/tests:/tests -v $(pwd)/results:/results robotframework-all
 docker run -it -v $PWD:/cypress -w /cypress cypress-all npx cypress run
+docker run --rm -v $PWD:/cypress -w /cypress cypress-all npx cypress run
 
 #HOW to run it from root folder using COMPOSE
 #9 BUILD with compose

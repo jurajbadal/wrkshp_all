@@ -37,7 +37,8 @@ services:
   cypress:
     build: ./cypress
     volumes:
-      - ./cypress:cypress/e2e   
+    - ${PWD}/cypress:/cypress/e2e
+       
     command: npx cypress run 
 
   
