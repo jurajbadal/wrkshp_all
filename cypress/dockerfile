@@ -1,0 +1,16 @@
+FROM cypress/included
+
+WORKDIR /e2e
+
+COPY ./cypress .
+COPY cypress.config.js .
+COPY package.json .
+COPY package-lock.json .
+
+
+# Add cypress package to package.json
+RUN npm install --save-dev cypress@13.13.3
+
+RUN npm install
+
+CMD ["npx", "cypress", "run"]
