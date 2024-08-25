@@ -7,13 +7,22 @@ services:
   k6:
     build: ./K6
     volumes:
-      - ${PWD}/k6:/app
+      - ${PWD}/k6:/k6
+    environment:
+      - K6_WEB_DASHBOARD=true
+      - K6_WEB_DASHBOARD_EXPORT=/k6/html-report.html
+    command: run script.js
 
   newman:
     build: ./newman
+    image: wrshp_all-newman
     volumes:
-      - ./newman:/app
-
+      - ${PWD}/newman/reports:/newman/reports
+    command: >
+      run /newman/mycollection.json
+      -r htmlextra
+      --reporter-htmlextra-export /newman/reports/report.html
+    
   python39:
     build: ./python39
     volumes:

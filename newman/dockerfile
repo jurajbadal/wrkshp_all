@@ -1,13 +1,9 @@
-FROM node:18-slim
+FROM postman/newman:latest
 
 WORKDIR /newman
 
-RUN npm install -g newman 
-RUN npm install -g newman-reporter-influxdb
-
-ENV NODE_PATH /usr/local/lib/node_modules
+RUN npm install -g newman-reporter-htmlextra
 
 COPY . .
 
-CMD ["newman", "run", "mycollection.json", "-r", "influxdb"]
 ENTRYPOINT ["newman"]

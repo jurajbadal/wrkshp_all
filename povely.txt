@@ -28,7 +28,7 @@ solution, especially for complex testing or automation scenarios.
 
 #HOW TO work from each folder:
 #7 builds from each own folder
-docker build -t k6-all .
+RUN npm install -g newman-reporter-htmlextra
 docker build -t newman-all .
 docker build -t python39-all .
 docker build -t robotframework-all .
@@ -36,7 +36,11 @@ docker build -t cypress-all .
 
 #8 How to run each of them
 docker run --rm -i k6-all run script.js
-docker run --rm -v ${PWD}:/app newman-all run mycollection.json
+with html report from docker locally
+docker run --rm -i -v ${PWD}:/k6 -e K6_WEB_DASHBOARD=true -e K6_WEB_DASHBOARD_EXPORT=/k6/html-report.html k6-all run script.js
+docker run --rm -v ${PWD}:/newman newman-all run mycollection.json
+with html report from docker locally
+docker run --rm -v $(pwd)/reports:/newman/reports newman-all run mycollection.json -r htmlextra --reporter-htmlextra-export /newman/reports/report.html
 docker run --rm -i python39-all python hello_world.py
 docker run --rm -v $(pwd)/tests:/tests -v $(pwd)/results:/results robotframework-all
 docker run -it -v $PWD:/cypress -w /cypress cypress-all npx cypress run
@@ -52,6 +56,9 @@ docker-compose build cypress
 #10 RUN BUILDS with compose
 docker-compose run --rm k6 run script.js
 docker-compose run --rm newman run mycollection.json
+with HTML report in newman/reports
+docker-compose run --rm newman run mycollection.json -r htmlextra --reporter-htmlextra-export /newman/reports/report.html
+
 docker-compose run --rm python39 python hello_world.py
 docker-compose run --rm robotframework
 docker-compose run --rm cypress 
