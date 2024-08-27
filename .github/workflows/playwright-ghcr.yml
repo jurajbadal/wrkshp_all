@@ -19,11 +19,10 @@ jobs:
     - name: Run Playwright tests
       run: |
         docker run --rm \
-          -v ${{ github.workspace }}/playwright-report:/app/playwright/playwright-report \
-          -v ${{ github.workspace }}/tests:/app/playwright/tests \
-          -v ${{ github.workspace }}/playwright.config.ts:/app/playwright/playwright.config.ts \
+          -v ${{ github.workspace }}/playwright/playwright-report:/app/playwright/playwright-report \
+          -v ${{ github.workspace }}/playwright/tests:/app/playwright/tests \
           playwright-ci test --browser=all
-
+          
     - uses: actions/upload-artifact@v2
       if: always()
       with:
