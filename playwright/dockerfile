@@ -4,6 +4,8 @@ WORKDIR /app/playwright
 
 # Copy package.json and package-lock.json (if available)
 COPY package*.json ./
+# Copy the playwright config
+COPY playwright.config.ts .
 
 # Install dependencies
 RUN npm ci
