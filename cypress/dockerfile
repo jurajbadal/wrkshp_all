@@ -12,4 +12,7 @@ WORKDIR /cypress/e2e
 COPY --from=build /cypress/e2e/node_modules ./node_modules
 COPY cypress.config.js ./
 COPY ./cypress .
+# Ensure the support file exists
+RUN test -f ./cypress/support/e2e.js || echo "// Support file" > ./cypress/support/e2e.js
+
 CMD ["npx", "cypress", "run"]
