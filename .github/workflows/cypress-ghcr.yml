@@ -16,9 +16,7 @@ jobs:
     - name: Build Docker image
       run: docker build -t cypress-ci ./cypress
 
-    - name: Inspect Docker container
-      run: |
-        docker run --rm cypress-ci ls -R /app/cypress
+    
 
     - name: Run Cypress tests
       run: |
