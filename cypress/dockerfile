@@ -19,7 +19,7 @@ COPY --from=build /app/cypress/cypress.config.js ./
 COPY --from=build /app/cypress/cypress ./cypress
 
 # Verify the structure
-RUN ls -R
+
 
 CMD ["npx", "cypress", "run"]
 
