@@ -33,6 +33,7 @@ docker build -t newman-all .
 docker build -t python39-all .
 docker build -t robotframework-all .
 docker build -t cypress-all .
+docker build -t playwright-all .
 
 #8 How to run each of them
 docker run --rm -i k6-all run script.js
@@ -45,6 +46,9 @@ docker run --rm -i python39-all python hello_world.py
 docker run --rm -v $(pwd)/tests:/tests -v $(pwd)/results:/results robotframework-all
 docker run -it -v $PWD:/cypress -w /cypress cypress-all npx cypress run
 docker run --rm -v $PWD:/cypress -w /cypress cypress-all npx cypress run
+docker run --rm -i playwright-all npx playwright test --browser=all
+with html report from docker locally
+docker run --rm -v $(pwd)/playwright-report:/app/playwright/playwright-report -v $(pwd)/tests:/app/playwright/tests playwright-all npx playwright test --browser=all
 
 #HOW to run it from root folder using COMPOSE
 #9 BUILD with compose
@@ -53,6 +57,7 @@ docker-compose build newman
 docker-compose build python39
 docker-compose build robotframework
 docker-compose build cypress
+docker-compose build playwright
 
 #10 RUN BUILDS with compose
 docker-compose run --rm k6 run script.js
@@ -63,6 +68,7 @@ docker-compose run --rm newman run mycollection.json -r htmlextra --reporter-htm
 docker-compose run --rm python39 python hello_world.py
 docker-compose run --rm robotframework
 docker-compose run --rm cypress 
+docker-compose run --rm playwright
 
 
 #11 how to build and run all from the root folder using COMPOSE

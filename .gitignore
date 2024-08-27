@@ -24,3 +24,4 @@ TestResults.xml
 *.html
 node_modules/
 *.png
+playwright-report

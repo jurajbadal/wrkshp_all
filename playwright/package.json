@@ -1,0 +1,26 @@
+{
+  "name": "playwright-with-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --browser=all",
+    "test-html-report": "playwright test --browser=all --reporter=html",
+    "test-json-report": "PLAYWRIGHT_JSON_OUTPUT_NAME=results.json playwright test --browser=chromium --reporter=json",
+    "newman": "newman run newman/mycollection.json -r htmlextra --reporter-htmlextra-export ./newman/results/report.html",
+    "k6": "K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=k6/html-report.html k6 run k6/script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1-focal",
+    "@types/node": "^20.14.0",
+    "newman-reporter-htmlextra": "^1.23.1",
+    "playwright": "^1.46.1",
+    "toml": "^3.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "k6": "^0.0.0"
+  }
+}

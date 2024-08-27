@@ -1,9 +1,17 @@
 services:
   playwright:
-    build: ./playwright
+    build:
+      context: ./playwright
+      dockerfile: Dockerfile
     volumes:
-      - ./playwright:/app
+      - ./playwright:/app/playwright
+      - /app/playwright/node_modules
+    working_dir: /app/playwright
+    command: npx playwright test
+  
 
+    
+    
   k6:
     build: ./K6
     volumes:
