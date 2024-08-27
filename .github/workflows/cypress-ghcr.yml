@@ -16,10 +16,14 @@ jobs:
     - name: Build Docker image
       run: docker build -t cypress-ci ./cypress
 
+    - name: Inspect Docker container
+      run: |
+        docker run --rm cypress-ci ls -R /app/cypress
+
     - name: Run Cypress tests
       run: |
         docker run --rm \
-          -v ${{ github.workspace }}/cypress/results:/app/cypress/results \
+          -v ${{ github.workspace }}/cypress/results:/app/cypress/cypress/results \
           cypress-ci
 
     - uses: actions/upload-artifact@v2
@@ -28,7 +32,6 @@ jobs:
         name: cypress-results
         path: cypress/results
         retention-days: 30
-
 
 
 

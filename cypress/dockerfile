@@ -1,18 +1,25 @@
 # Stage 1: Build and install dependencies
-FROM cypress/included:13.13.3 AS build
-WORKDIR /cypress/e2e
+FROM cypress/included:13.3.3 AS build
+
+WORKDIR /app/cypress
+
 COPY package*.json ./
-RUN npm install
-RUN npm prune
-RUN npm install cypress --save-dev
+COPY cypress.config.js ./
+COPY cypress ./cypress
+
+RUN npm ci
 
 # Stage 2: Copy necessary files and run Cypress
-FROM cypress/included:13.13.3
-WORKDIR /cypress/e2e
-COPY --from=build /cypress/e2e/node_modules ./node_modules
-COPY cypress.config.js ./
-COPY ./cypress/support/e2e.js ./
-# Ensure the support file exists
+FROM cypress/included:13.3.3
 
+WORKDIR /app/cypress
+
+COPY --from=build /app/cypress/node_modules ./node_modules
+COPY --from=build /app/cypress/cypress.config.js ./
+COPY --from=build /app/cypress/cypress ./cypress
+
+# Verify the structure
+RUN ls -R
 
 CMD ["npx", "cypress", "run"]
+
