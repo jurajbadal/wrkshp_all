@@ -10,6 +10,6 @@ RUN npm install cypress --save-dev
 FROM cypress/included
 WORKDIR /cypress/e2e
 COPY --from=build /cypress/e2e/node_modules ./node_modules
-COPY cypress.config.js .
+COPY cypress.config.js ./
 COPY ./cypress .
 CMD ["npx", "cypress", "run"]
