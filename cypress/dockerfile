@@ -11,7 +11,7 @@ FROM cypress/included:13.13.3
 WORKDIR /cypress/e2e
 COPY --from=build /cypress/e2e/node_modules ./node_modules
 COPY cypress.config.js ./
-COPY ./cypress .
+COPY ./cypress/support/e2e.js ./
 # Ensure the support file exists
 
 
