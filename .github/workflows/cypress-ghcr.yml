@@ -19,7 +19,7 @@ jobs:
     - name: Run Cypress tests
       run: |
         docker run --rm \
-          -v ${{ github.workspace }}/cypress/results:/cypress/e2e/results \
+          -v ${{ github.workspace }}/cypress/results:/app/cypress/results \
           cypress-ci
 
     - uses: actions/upload-artifact@v2
