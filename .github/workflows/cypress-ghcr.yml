@@ -1,0 +1,40 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - run: |
+         echo "Environment variables:"
+         printenv
+
+      - name: Copy package.json
+        run: | 
+          cp cypress/package.json .
+          cp cypress/cypress.config.js .
+
+      - name: Install dependencies
+        run: |
+          npm install
+          
+
+      - name: Run Cypress tests
+        run: | 
+          
+          npx cypress run
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-test-results
+          path: cypress/screenshots
+
+        
