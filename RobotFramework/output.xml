@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.19 on linux)" generated="20240828 10:08:21.876" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.19 on linux)" generated="20240828 11:39:39.873" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="/tests">
 <suite id="s1-s1" name="Tests" source="/tests/tests">
 <suite id="s1-s1-s1" name="Example1 Test" source="/tests/tests/example1_test.robot">
@@ -10,8 +10,8 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20240828 10:08:22.739" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f0fcff24c70&gt;</msg>
-<status status="PASS" starttime="20240828 10:08:22.738" endtime="20240828 10:08:22.740"/>
+<msg timestamp="20240828 11:39:40.219" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f08e5f16c70&gt;</msg>
+<status status="PASS" starttime="20240828 11:39:40.218" endtime="20240828 11:39:40.219"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${HEADLESS}</arg>
@@ -25,62 +25,62 @@
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:22.741" endtime="20240828 10:08:22.741"/>
+<status status="PASS" starttime="20240828 11:39:40.219" endtime="20240828 11:39:40.220"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:22.740" endtime="20240828 10:08:22.741"/>
+<status status="PASS" starttime="20240828 11:39:40.219" endtime="20240828 11:39:40.220"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:22.741" endtime="20240828 10:08:22.743"/>
+<status status="PASS" starttime="20240828 11:39:40.220" endtime="20240828 11:39:40.220"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:22.744" endtime="20240828 10:08:22.744"/>
+<status status="PASS" starttime="20240828 11:39:40.220" endtime="20240828 11:39:40.221"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>chrome_options=${chrome_options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20240828 10:08:22.745" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20240828 10:08:22.745" endtime="20240828 10:08:24.497"/>
+<msg timestamp="20240828 11:39:40.221" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20240828 11:39:40.221" endtime="20240828 11:39:41.062"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240828 10:08:24.498" level="INFO">Opening url 'https://www.example.com'</msg>
-<status status="PASS" starttime="20240828 10:08:24.497" endtime="20240828 10:08:25.306"/>
+<msg timestamp="20240828 11:39:41.063" level="INFO">Opening url 'https://www.example.com'</msg>
+<status status="PASS" starttime="20240828 11:39:41.063" endtime="20240828 11:39:41.747"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:22.737" endtime="20240828 10:08:25.307"/>
+<status status="PASS" starttime="20240828 11:39:40.217" endtime="20240828 11:39:41.748"/>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20240828 10:08:25.368" level="INFO">${title} = Example Domain</msg>
-<status status="PASS" starttime="20240828 10:08:25.310" endtime="20240828 10:08:25.368"/>
+<msg timestamp="20240828 11:39:41.779" level="INFO">${title} = Example Domain</msg>
+<status status="PASS" starttime="20240828 11:39:41.748" endtime="20240828 11:39:41.779"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Page title is: ${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240828 10:08:25.373" level="INFO">Page title is: Example Domain</msg>
-<status status="PASS" starttime="20240828 10:08:25.372" endtime="20240828 10:08:25.373"/>
+<msg timestamp="20240828 11:39:41.781" level="INFO">Page title is: Example Domain</msg>
+<status status="PASS" starttime="20240828 11:39:41.780" endtime="20240828 11:39:41.781"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${title}</arg>
 <arg>Example Domain</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20240828 10:08:25.373" endtime="20240828 10:08:25.374"/>
+<status status="PASS" starttime="20240828 11:39:41.781" endtime="20240828 11:39:41.782"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240828 10:08:25.376" endtime="20240828 10:08:25.450"/>
+<status status="PASS" starttime="20240828 11:39:41.782" endtime="20240828 11:39:41.844"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:22.734" endtime="20240828 10:08:25.451"/>
+<status status="PASS" starttime="20240828 11:39:40.216" endtime="20240828 11:39:41.844"/>
 </test>
 <test id="s1-s1-s1-t2" name="Example 1 - Check Page Content" line="27">
 <kw name="Open Chrome Browser">
@@ -89,8 +89,8 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20240828 10:08:25.461" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f0fcfe278e0&gt;</msg>
-<status status="PASS" starttime="20240828 10:08:25.457" endtime="20240828 10:08:25.461"/>
+<msg timestamp="20240828 11:39:41.849" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f08e5e168e0&gt;</msg>
+<status status="PASS" starttime="20240828 11:39:41.849" endtime="20240828 11:39:41.849"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${HEADLESS}</arg>
@@ -104,57 +104,57 @@
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:25.472" endtime="20240828 10:08:25.473"/>
+<status status="PASS" starttime="20240828 11:39:41.850" endtime="20240828 11:39:41.850"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:25.463" endtime="20240828 10:08:25.473"/>
+<status status="PASS" starttime="20240828 11:39:41.849" endtime="20240828 11:39:41.850"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:25.474" endtime="20240828 10:08:25.474"/>
+<status status="PASS" starttime="20240828 11:39:41.850" endtime="20240828 11:39:41.852"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:25.474" endtime="20240828 10:08:25.475"/>
+<status status="PASS" starttime="20240828 11:39:41.853" endtime="20240828 11:39:41.853"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>chrome_options=${chrome_options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20240828 10:08:25.476" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20240828 10:08:25.475" endtime="20240828 10:08:26.903"/>
+<msg timestamp="20240828 11:39:41.854" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20240828 11:39:41.853" endtime="20240828 11:39:42.663"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240828 10:08:26.906" level="INFO">Opening url 'https://www.example.com'</msg>
-<status status="PASS" starttime="20240828 10:08:26.904" endtime="20240828 10:08:27.892"/>
+<msg timestamp="20240828 11:39:42.665" level="INFO">Opening url 'https://www.example.com'</msg>
+<status status="PASS" starttime="20240828 11:39:42.664" endtime="20240828 11:39:43.198"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:25.455" endtime="20240828 10:08:27.892"/>
+<status status="PASS" starttime="20240828 11:39:41.848" endtime="20240828 11:39:43.199"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>This domain is for use in illustrative examples in documents</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20240828 10:08:27.988" level="INFO">Current page contains text 'This domain is for use in illustrative examples in documents'.</msg>
-<status status="PASS" starttime="20240828 10:08:27.897" endtime="20240828 10:08:27.988"/>
+<msg timestamp="20240828 11:39:43.266" level="INFO">Current page contains text 'This domain is for use in illustrative examples in documents'.</msg>
+<status status="PASS" starttime="20240828 11:39:43.199" endtime="20240828 11:39:43.266"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240828 10:08:28.151" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240828 10:08:27.988" endtime="20240828 10:08:28.151"/>
+<msg timestamp="20240828 11:39:43.361" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240828 11:39:43.267" endtime="20240828 11:39:43.361"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240828 10:08:28.152" endtime="20240828 10:08:28.228"/>
+<status status="PASS" starttime="20240828 11:39:43.362" endtime="20240828 11:39:43.425"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:25.454" endtime="20240828 10:08:28.229"/>
+<status status="PASS" starttime="20240828 11:39:41.846" endtime="20240828 11:39:43.426"/>
 </test>
-<status status="PASS" starttime="20240828 10:08:21.941" endtime="20240828 10:08:28.233"/>
+<status status="PASS" starttime="20240828 11:39:39.938" endtime="20240828 11:39:43.428"/>
 </suite>
 <suite id="s1-s1-s2" name="Example Test" source="/tests/tests/example_test.robot">
 <test id="s1-s1-s2-t1" name="Example Test" line="20">
@@ -164,8 +164,8 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20240828 10:08:28.274" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f0fcfe3efd0&gt;</msg>
-<status status="PASS" starttime="20240828 10:08:28.268" endtime="20240828 10:08:28.275"/>
+<msg timestamp="20240828 11:39:43.448" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f08e5e2cfd0&gt;</msg>
+<status status="PASS" starttime="20240828 11:39:43.447" endtime="20240828 11:39:43.449"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${HEADLESS}</arg>
@@ -179,56 +179,56 @@
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:28.276" endtime="20240828 10:08:28.280"/>
+<status status="PASS" starttime="20240828 11:39:43.449" endtime="20240828 11:39:43.449"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:28.275" endtime="20240828 10:08:28.281"/>
+<status status="PASS" starttime="20240828 11:39:43.449" endtime="20240828 11:39:43.449"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:28.281" endtime="20240828 10:08:28.282"/>
+<status status="PASS" starttime="20240828 11:39:43.450" endtime="20240828 11:39:43.450"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240828 10:08:28.283" endtime="20240828 10:08:28.283"/>
+<status status="PASS" starttime="20240828 11:39:43.450" endtime="20240828 11:39:43.450"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>chrome_options=${chrome_options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20240828 10:08:28.285" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20240828 10:08:28.284" endtime="20240828 10:08:29.736"/>
+<msg timestamp="20240828 11:39:43.453" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20240828 11:39:43.452" endtime="20240828 11:39:44.294"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240828 10:08:29.738" level="INFO">Opening url 'https://www.example.com'</msg>
-<status status="PASS" starttime="20240828 10:08:29.736" endtime="20240828 10:08:30.609"/>
+<msg timestamp="20240828 11:39:44.295" level="INFO">Opening url 'https://www.example.com'</msg>
+<status status="PASS" starttime="20240828 11:39:44.295" endtime="20240828 11:39:45.053"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:28.268" endtime="20240828 10:08:30.609"/>
+<status status="PASS" starttime="20240828 11:39:43.446" endtime="20240828 11:39:45.054"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Example Domain</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20240828 10:08:30.660" level="INFO">Page title is 'Example Domain'.</msg>
-<status status="PASS" starttime="20240828 10:08:30.610" endtime="20240828 10:08:30.660"/>
+<msg timestamp="20240828 11:39:45.078" level="INFO">Page title is 'Example Domain'.</msg>
+<status status="PASS" starttime="20240828 11:39:45.054" endtime="20240828 11:39:45.078"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240828 10:08:30.661" endtime="20240828 10:08:30.727"/>
+<status status="PASS" starttime="20240828 11:39:45.078" endtime="20240828 11:39:45.137"/>
 </kw>
-<status status="PASS" starttime="20240828 10:08:28.266" endtime="20240828 10:08:30.728"/>
+<status status="PASS" starttime="20240828 11:39:43.444" endtime="20240828 11:39:45.138"/>
 </test>
-<status status="PASS" starttime="20240828 10:08:28.241" endtime="20240828 10:08:30.730"/>
+<status status="PASS" starttime="20240828 11:39:43.433" endtime="20240828 11:39:45.140"/>
 </suite>
-<status status="PASS" starttime="20240828 10:08:21.935" endtime="20240828 10:08:30.735"/>
+<status status="PASS" starttime="20240828 11:39:39.932" endtime="20240828 11:39:45.143"/>
 </suite>
-<status status="PASS" starttime="20240828 10:08:21.878" endtime="20240828 10:08:30.742"/>
+<status status="PASS" starttime="20240828 11:39:39.876" endtime="20240828 11:39:45.147"/>
 </suite>
 <statistics>
 <total>

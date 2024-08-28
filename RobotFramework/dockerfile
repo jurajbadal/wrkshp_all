@@ -31,6 +31,13 @@ RUN apk add --no-cache \
     chromium \
     chromium-chromedriver
 
+# Copy requirements file
+COPY requirements.txt ./
+COPY tests ./tests
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
 
 # Copy Python packages from builder stage
 COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
