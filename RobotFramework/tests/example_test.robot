@@ -6,6 +6,7 @@ Library    OperatingSystem
 ${BROWSER}    chrome
 ${URL}    https://www.example.com
 ${HEADLESS}    ${TRUE}    # Set to ${FALSE} for local headed execution
+${TIMEOUT}    30s
 
 *** Keywords ***
 Open Chrome Browser
