@@ -30,6 +30,12 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y wget unzip chromium-browser chromium-chromedriver
         pip install -r requirements.txt
+        echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+    - name: Run Robot Framework tests
+      run: |
+        robot .
+
     
     - name: Run Robot Framework tests
       run: |
