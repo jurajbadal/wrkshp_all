@@ -16,6 +16,14 @@ Open Chrome Browser
     Create Webdriver    Chrome    chrome_options=${chrome_options}
     Go To    ${URL}
 
+Prime Browser
+    Open Chrome Browser
+    Close Browser
+
+*** Test Cases ***
+Browser Priming
+    Prime Browser
+
 *** Test Cases ***
 Example 1 - Check Page Title
     Open Chrome Browser
