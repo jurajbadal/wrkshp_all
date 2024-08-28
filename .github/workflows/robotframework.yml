@@ -37,6 +37,4 @@ jobs:
         robot .
 
     
-    - name: Run Robot Framework tests
-      run: |
-        robot .
+    
