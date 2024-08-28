@@ -36,7 +36,7 @@ COPY requirements.txt ./
 COPY tests ./tests
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 
 # Copy Python packages from builder stage
