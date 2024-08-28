@@ -18,6 +18,13 @@ jobs:
       with:
         python-version: '3.9'
     
+    - name: Check for requirements.txt
+      run: |
+        if [ ! -f "requirements.txt" ]; then
+          echo "requirements.txt not found. Creating an empty file."
+          touch requirements.txt
+        fi
+    
     - name: Install dependencies
       run: |
         sudo apt-get update
