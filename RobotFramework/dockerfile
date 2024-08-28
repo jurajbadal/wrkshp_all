@@ -9,7 +9,7 @@ RUN apk add --no-cache \
     chromium-chromedriver
 
 # Set up the working directory
-WORKDIR /Robotframework
+WORKDIR /RobotFramework
 
 # Copy requirements file
 COPY requirements.txt ./
@@ -37,6 +37,6 @@ COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python
 COPY --from=builder /usr/local/bin /usr/local/bin
 
 # Set up the tests directory
-WORKDIR /Robotframework
+WORKDIR /tests
 
-CMD ["robot", ".tests"]
+CMD ["robot", "."]
