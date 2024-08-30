@@ -65,7 +65,7 @@ docker-compose run --rm newman run mycollection.json
 with HTML report in newman/reports
 docker-compose run --rm newman run mycollection.json -r htmlextra --reporter-htmlextra-export /newman/reports/report.html
 
-docker-compose run --rm python39 python hello_world.py
+docker run -it -v $PWD:/cypress -w /cypress cypress-all npx cypress run
 docker-compose run --rm robotframework
 docker-compose run --rm cypress 
 docker-compose run --rm playwright
