@@ -18,7 +18,7 @@ jobs:
           newman run newman/mycollection.json \
           --reporters cli,htmlextra,json \
           --reporter-htmlextra-export newman/reports/report.html \
-          --reporter-json-export newman/reports/report.json
+          
 
       - name: Upload Newman reports
         uses: actions/upload-artifact@v3
