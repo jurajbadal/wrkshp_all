@@ -25,3 +25,4 @@ TestResults.xml
 node_modules/
 *.png
 playwright-report
+*.gs
