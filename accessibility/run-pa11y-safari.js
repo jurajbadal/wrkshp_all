@@ -1,6 +1,6 @@
-const pa11y = import('pa11y');
-const puppeteer = import('puppeteer');
-const fs = import('fs').promises;
+import pa11y from 'pa11y';
+import puppeteer from 'puppeteer';
+import { promises as fs } from 'fs';
 
 const urls = [
   'http://37.27.17.198:8084/cs',
@@ -14,7 +14,6 @@ async function runTests() {
     executablePath: '/Applications/Safari.app/Contents/MacOS/Safari',
     headless: false
   });
-  
   let fullReport = '<html><body>';
   for (const url of urls) {
     const result = await pa11y(url, {
@@ -25,9 +24,7 @@ async function runTests() {
     fullReport += `<pre>${JSON.stringify(result, null, 2)}</pre>`;
   }
   fullReport += '</body></html>';
-  
   await fs.writeFile('accessibility/safari-report.html', fullReport);
-  
   await browser.close();
 }
 
