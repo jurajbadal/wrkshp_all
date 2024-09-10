@@ -16,7 +16,8 @@ jobs:
       with:
         node-version: '18'
     - name: Install dependencies
-      run: npm install
+      run: npm install accessibility/package.json
+      
     - name: Install Pa11y
       run: npm install pa11y 
     - name: Install Pa11y HTML Reporter Plus
