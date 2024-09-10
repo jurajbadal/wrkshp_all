@@ -1,0 +1,8 @@
+{
+    "devDependencies": {
+      "pa11y": "^6.0.0",
+      "axe-core": "^4.4.0",
+      "axe-reporter-html": "^1.1.0"
+    }
+  }
+  

@@ -1,24 +1,25 @@
 const pa11y = require('pa11y');
 const fs = require('fs');
+const axeReporter = require('axe-reporter-html');
 
 const urls = [
-  'http://37.27.17.198:8084/cs',
+  'https://example.com',
   'https://example.com/about',
   'https://example.com/contact'
 ];
 
 async function runTests() {
-  let fullReport = '<html><body>';
+  let results = [];
   for (const url of urls) {
     const result = await pa11y(url, {
-      standard: 'WCAG2AA'
+      standard: 'WCAG2AA',
+      runner: 'axe'
     });
-    fullReport += `<h2>Results for ${url}</h2>`;
-    fullReport += `<pre>${JSON.stringify(result, null, 2)}</pre>`;
+    results.push(result);
   }
-  fullReport += '</body></html>';
-  
-  fs.writeFileSync('accessibility/report.html', fullReport);
+
+  const htmlReport = axeReporter.createHtmlReport({ results });
+  fs.writeFileSync('accessibility/axe-report.html', htmlReport);
 }
 
 runTests();
