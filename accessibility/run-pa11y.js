@@ -18,7 +18,7 @@ async function runTests() {
   }
   fullReport += '</body></html>';
   
-  fs.writeFileSync('Accessibility/report.html', fullReport);
+  fs.writeFileSync('accessibility/report.html', fullReport);
 }
 
 runTests();

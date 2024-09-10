@@ -25,7 +25,7 @@ async function runTests() {
   }
   fullReport += '</body></html>';
   
-  fs.writeFileSync('Accessibility/report-safari.html', fullReport);
+  fs.writeFileSync('accessibility/report-safari.html', fullReport);
   
   await browser.close();
 }
