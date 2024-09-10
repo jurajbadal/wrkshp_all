@@ -28,7 +28,7 @@ playwright-report
 *.gs
 *.xml
 
-*.js
+
 U_Influx
 *.ts
 .*.ts
