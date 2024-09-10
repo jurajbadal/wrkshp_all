@@ -17,4 +17,4 @@ jobs:
         node-version: '18'
     - run: npm install pa11y
     - name: Run Pa11y
-      run: node accessibility/run-pa11y.js
+      run: node wrkshp_all/accessibility/run-pa11y.js
