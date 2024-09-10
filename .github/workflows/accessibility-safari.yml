@@ -21,7 +21,7 @@ jobs:
     - name: Enable SafariDriver
       run: |
         sudo safaridriver --enable
-        defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically 1
+        defaults write com.apple.SafariWebKitJavaScriptCanOpenWindowsAutomatically 1
     - name: Run Pa11y with Safari
       run: node ./accessibility/run-pa11y-safari.js
 
