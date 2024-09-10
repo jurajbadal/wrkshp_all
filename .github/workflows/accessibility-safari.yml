@@ -15,8 +15,10 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20'
-    - run: npm install pa11y puppeteer
-    - name: Run Pa11y with Safari
+    - run: npm install pa11y
+    - name: Enable SafariDriver
       run: |
-        /usr/bin/safaridriver --enable
-        node ./accessibility/run-pa11y-safari.js
+        sudo safaridriver --enable
+        defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically 1
+    - name: Run Pa11y with Safari
+      run: node ./accessibility/run-pa11y-safari.js
