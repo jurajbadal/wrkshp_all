@@ -24,6 +24,10 @@ jobs:
     - name: Run Pa11y
       run: node accessibility/run-pa11y.js
       
-      
+    - name: Upload HTML report
+      uses: actions/upload-artifact@v2
+      with:
+        name: accessibility-report
+        path: accessibility/plus-report.html  
         
         

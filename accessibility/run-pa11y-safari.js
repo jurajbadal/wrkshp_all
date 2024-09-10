@@ -1,6 +1,6 @@
-const pa11y = require('pa11y');
-const puppeteer = require('puppeteer');
-const fs = require('fs');
+const pa11y = import('pa11y');
+const puppeteer = import('puppeteer');
+const fs = import('fs');
 
 const urls = [
   'https://example.com',
