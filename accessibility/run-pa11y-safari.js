@@ -12,8 +12,8 @@ const urls = [
 async function runTests() {
   const browser = await puppeteer.launch({
     executablePath: '/Applications/Safari.app/Contents/MacOS/Safari',
-    headless: false
-    timeout: 60000 // 60 seconds
+    headless: true
+    
   });
   let fullReport = '<html><body>';
   for (const url of urls) {
