@@ -24,3 +24,9 @@ jobs:
         defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically 1
     - name: Run Pa11y with Safari
       run: node ./accessibility/run-pa11y-safari.js
+
+    - name: Upload HTML report
+      uses: actions/upload-artifact@v2
+      with:
+        name: accessibility-report
+        path: accessibility/safari-report.html  
