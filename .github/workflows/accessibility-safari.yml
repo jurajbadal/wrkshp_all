@@ -15,7 +15,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20'
-    - run: npm init    
+    - run: npm init 
+    - run: npm install puppeteer   
     - run: npm install pa11y
     - name: Enable SafariDriver
       run: |
