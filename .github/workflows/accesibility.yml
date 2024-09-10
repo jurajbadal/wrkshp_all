@@ -14,10 +14,10 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'
+        node-version: '20'
     - name: Install dependencies
-      run: npm install accessibility/package.json
-      
+      run: npm install 
+            
     - name: Install Pa11y
       run: npm install pa11y 
     - name: Install Pa11y HTML Reporter Plus
