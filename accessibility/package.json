@@ -1,8 +1,10 @@
 {
   "type": "module",
-  "dependencies": {    
-    "pa11y-reporter-html-plus": "^2.0.0"
+  "dependencies": {
+    "pa11y": "^6.0.0",
+    "pa11y-reporter-html-plus": "^1.0.0"
   }
 }
+
 
   

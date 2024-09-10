@@ -1,6 +1,6 @@
-const pa11y = require('pa11y');
-const htmlReporter = require('pa11y-reporter-html-plus');
-const fs = require('fs').promises;
+import pa11y from 'pa11y';
+import htmlReporter from 'pa11y-reporter-html-plus';
+import { promises as fs } from 'fs';
 
 const urls = [
   'http://37.27.17.198:8084/cs',
@@ -24,3 +24,4 @@ async function runTests() {
 }
 
 runTests();
+
