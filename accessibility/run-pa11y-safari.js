@@ -13,6 +13,9 @@ async function runTests() {
   const browser = await puppeteer.launch({
     executablePath: '/Applications/Safari.app/Contents/MacOS/Safari',
     headless: true
+  });
+  browser.on('disconnected', () => {
+    browser.close();
     
   });
   let fullReport = '<html><body>';
