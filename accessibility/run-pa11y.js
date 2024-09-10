@@ -17,9 +17,17 @@ async function runTests() {
     });
     results.push(result);
   }
-
-  const htmlReport = axeReporter.createHtmlReport({ results });
-  fs.writeFileSync('accessibility/axe-report.html', htmlReport);
+  const reporter = new AxeReporter({
+    outputs: [
+      {
+        type: 'html',
+        filename: 'accessibility/axe-report.html'
+      }
+    ]
+  });
+  
+  await reporter.run(results);
+  
 }
 
 runTests();
