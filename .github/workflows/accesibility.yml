@@ -18,7 +18,8 @@ jobs:
     - name: Install dependencies
       run: npm install   
       working-directory: ./accessibility
-   
+    - name: Install Pa11y
+      run: npm install pa11y
     - name: Run Pa11y
       run: node accessibility/run-pa11y.js
     - name: Upload HTML report
