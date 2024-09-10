@@ -15,13 +15,11 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20'
-    - name: Install dependencies
-      run: npm install
-      working-directory: ./accessibility
+    
     - name: Install Pa11y
-      run: npm install pa11y
-    
-    
+      run: npm install pa11y 
+    - name: Install Pa11y HTML Reporter Plus
+      run: npm install pa11y  -reporter-html-plus   
 
     - name: Run Pa11y
       run: node accessibity/run-pa11y.js
