@@ -3,6 +3,7 @@ const puppeteer = import('puppeteer');
 const fs = import('fs');
 
 const urls = [
+  'http://37.27.17.198:8084/cs',
   'https://example.com',
   'https://example.com/about',
   'https://example.com/contact'
@@ -25,7 +26,7 @@ async function runTests() {
   }
   fullReport += '</body></html>';
   
-  fs.writeFileSync('accessibility/report-safari.html', fullReport);
+  await fs.writeFile('accessibility/report.html', fullReport);
   
   await browser.close();
 }
