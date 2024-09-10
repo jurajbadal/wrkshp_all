@@ -33,4 +33,3 @@ U_Influx
 *.ts
 .*.ts
 playwright/.DS_Store
-.*.json
