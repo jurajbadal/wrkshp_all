@@ -16,7 +16,7 @@ async function runTests() {
   await fs.mkdir(reportDir, { recursive: true });
 
   for (const url of urls) {
-    const command = `npx pa11y --reporter=html-plus ${url}`;
+    const command = `npm pa11y --reporter=html-plus ${url}`;
     const { stdout } = await execAsync(command);
     await fs.appendFile(path.join(reportDir, 'plus-report.html'), stdout);
   }
