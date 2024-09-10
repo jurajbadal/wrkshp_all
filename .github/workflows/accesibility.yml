@@ -19,7 +19,7 @@ jobs:
     - name: Install Pa11y
       run: npm install pa11y 
     - name: Install Pa11y HTML Reporter Plus
-      run: npm install pa11y  -reporter-html-plus   
+      run: npm install pa11y-reporter-html-plus   
 
     - name: Run Pa11y
       run: node accessibility/run-pa11y.js
