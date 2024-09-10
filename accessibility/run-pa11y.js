@@ -1,6 +1,6 @@
 const pa11y = require('pa11y');
 const fs = require('fs');
-const axeReporter = require('axe-reporter-html');
+const {axeReporter} = require('axe-reporter-html');
 
 const urls = [
   'https://example.com',
