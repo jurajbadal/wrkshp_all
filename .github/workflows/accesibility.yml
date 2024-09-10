@@ -17,7 +17,7 @@ jobs:
         node-version: '20'
     - name: Install dependencies
       run: npm install
-      
+      working-directory: ./accessibility
     - name: Install Pa11y
       run: npm install pa11y
     - name: Install axe-core
