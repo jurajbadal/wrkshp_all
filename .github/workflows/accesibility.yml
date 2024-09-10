@@ -18,3 +18,9 @@ jobs:
     - run: npm install pa11y
     - name: Run Pa11y
       run: node accessibility/run-pa11y.js
+    - name: Upload HTML report
+      uses: actions/upload-artifact@v2
+      with:
+        name: accessibility-report
+        path: accessibility/report.html
+        
