@@ -1,6 +1,7 @@
 import pa11y from 'pa11y';
 import htmlReporter from 'pa11y-reporter-html-plus';
 import { promises as fs } from 'fs';
+import path from 'path';
 
 const urls = [
   'http://37.27.17.198:8084/cs',
@@ -19,8 +20,9 @@ async function runTests() {
     fullReport += `<h2>Results for ${url}</h2>`;
     fullReport += htmlResult;
   }
-
-  await fs.writeFile('accessibility/report.html', fullReport);
+  const reportDir = 'accessibility';
+  await fs.mkdir(reportDir, { recursive: true });
+  await fs.writeFile(path.join(reportDir, 'report.html'), fullReport);
 }
 
 runTests();
