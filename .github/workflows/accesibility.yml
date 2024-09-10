@@ -22,8 +22,7 @@ jobs:
       run: npm install pa11y
     - name: Install axe-core
       run: npm install axe-core
-    - name: Install axe-reporter-html
-      run: npm install axe-reporter-html
+    
 
     - name: Run Pa11y
       run: node accessibility/run-pa11y.js
@@ -31,5 +30,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: accessibility-report
-        path: accessibility/axereport.html
+        path: accessibility/axe-report.html
         
