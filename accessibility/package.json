@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test": "npx pa11y --reporter=html-plus"
+    
+  },
   "type": "module",
   "dependencies": {
     
