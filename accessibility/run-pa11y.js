@@ -21,7 +21,7 @@ async function runTests() {
   }
   fullReport += '</body></html>';
 
-  await fs.writeFile('Accessibility/report.html', fullReport);
+  await fs.writeFile('accessibility/report.html', fullReport);
 }
 
 runTests();
