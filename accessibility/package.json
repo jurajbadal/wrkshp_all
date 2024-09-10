@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {    
-    "pa11y-reporter-axe-cli": "^1.0.0"
+    "pa11y-reporter-html-plus": "^2.0.0"
   }
 }
 

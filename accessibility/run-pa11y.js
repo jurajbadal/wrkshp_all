@@ -1,26 +1,26 @@
-import { exec } from 'child_process';
-import { promisify } from 'util';
-import fs from 'fs/promises';
-
-const execAsync = promisify(exec);
+const pa11y = require('pa11y');
+const htmlReporter = require('pa11y-reporter-html-plus');
+const fs = require('fs').promises;
 
 const urls = [
-  'https://example.com',
+  'http://37.27.17.198:8084/cs',
   'https://example.com/about',
   'https://example.com/contact'
 ];
 
 async function runTests() {
-  let fullReport = '<html><body>';
-  
+  let fullReport = '';
   for (const url of urls) {
-    const { stdout } = await execAsync(`pa11y --reporter axe-cli ${url}`);
-    fullReport += `<h2>Results for ${url}</h2><pre>${stdout}</pre>`;
+    const result = await pa11y(url, {
+      standard: 'WCAG2AA',
+      reporter: 'html-plus'
+    });
+    const htmlResult = await htmlReporter.results(result);
+    fullReport += `<h2>Results for ${url}</h2>`;
+    fullReport += htmlResult;
   }
-  
-  fullReport += '</body></html>';
-  
-  await fs.writeFile('accessibility/axe-report.html', fullReport);
+
+  await fs.writeFile('accessibility/report.html', fullReport);
 }
 
 runTests();
