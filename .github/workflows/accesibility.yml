@@ -15,11 +15,15 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20'
-    - name: Install dependencies
-      run: npm install   
-      working-directory: ./accessibility
+    
+      
     - name: Install Pa11y
       run: npm install pa11y
+    - name: Install axe-core
+      run: npm install axe-core
+    - name: Install axe-reporter-html
+      run: npm install axe-reporter-html
+
     - name: Run Pa11y
       run: node accessibility/run-pa11y.js
     - name: Upload HTML report
