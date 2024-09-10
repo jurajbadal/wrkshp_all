@@ -1,6 +1,6 @@
-const pa11y = require('pa11y');
-const htmlReporter = require('pa11y-reporter-html-plus');
-const fs = require('fs').promises;
+const pa11y = import('pa11y');
+const htmlReporter = import('pa11y-reporter-html-plus');
+const fs = import('fs').promises;
 
 const urls = [
   'https://example.com',
