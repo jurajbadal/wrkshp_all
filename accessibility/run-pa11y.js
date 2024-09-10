@@ -17,7 +17,7 @@ async function runTests() {
     });
     results.push(result);
   }
-  const reporter = new AxeReporter({
+  const reporter = new axeReporter({
     outputs: [
       {
         type: 'html',
