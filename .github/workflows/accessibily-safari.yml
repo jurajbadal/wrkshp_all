@@ -19,4 +19,4 @@ jobs:
     - name: Run Pa11y with Safari
       run: |
         /usr/bin/safaridriver --enable
-        node Accessibility/run-pa11y-safari.js
+        node accessibility/run-pa11y-safari.js
