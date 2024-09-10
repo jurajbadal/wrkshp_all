@@ -1,6 +1,6 @@
 const pa11y = require('pa11y');
 const puppeteer = require('puppeteer');
-const fs = require('fs');
+const fs = require('fs').promises;
 
 const urls = [
   'http://37.27.17.198:8084/cs',
