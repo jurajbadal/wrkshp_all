@@ -1,6 +1,6 @@
-const pa11y = import('pa11y');
-const htmlReporter = import('pa11y-reporter-html-plus');
-const fs = import('fs').promises;
+import pa11y from 'pa11y';
+import htmlReporter from 'pa11y-reporter-html-plus';
+import { promises as fs } from 'fs';
 
 const urls = [
   'https://example.com',
