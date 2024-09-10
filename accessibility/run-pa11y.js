@@ -1,24 +1,29 @@
-const pa11y = require('pa11y');
-const fs = require('fs');
+import pa11y from 'pa11y';
+import htmlReporter from 'pa11y-reporter-html-plus';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 const urls = [
-  'https://example.com',
+  'http://37.27.17.198:8084/cs',
   'https://example.com/about',
   'https://example.com/contact'
 ];
 
 async function runTests() {
-  let fullReport = '<html><body>';
+  let fullReport = '';
   for (const url of urls) {
     const result = await pa11y(url, {
-      standard: 'WCAG2AA'
+      standard: 'WCAG2AA',
+      reporter: 'html-plus'
     });
+    const htmlResult = await htmlReporter.results(result);
     fullReport += `<h2>Results for ${url}</h2>`;
-    fullReport += `<pre>${JSON.stringify(result, null, 2)}</pre>`;
+    fullReport += htmlResult;
   }
-  fullReport += '</body></html>';
+  const reportDir = 'accessibility';
   
-  fs.writeFileSync('Accessibility/report.html', fullReport);
+  await fs.writeFile(path.join(reportDir, 'accessibility/plus-report.html'), fullReport);
 }
 
 runTests();
+
