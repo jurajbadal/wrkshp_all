@@ -13,11 +13,9 @@ async function runTests() {
   const browser = await puppeteer.launch({
     executablePath: '/Applications/Safari.app/Contents/MacOS/Safari',
     headless: true
+    timeout:60000
   });
-  browser.on('disconnected', () => {
-    browser.close();
-    
-  });
+  
   let fullReport = '<html><body>';
   for (const url of urls) {
     const result = await pa11y(url, {
