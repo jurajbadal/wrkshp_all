@@ -1,6 +1,6 @@
 const pa11y = require('pa11y');
 const fs = require('fs');
-const {axeReporter} = require('axe-reporter-html');
+const axeReporter = require('axe-reporter-html');
 
 const urls = [
   'https://example.com',
@@ -17,17 +17,10 @@ async function runTests() {
     });
     results.push(result);
   }
-  const reporter = new axeReporter({
-    outputs: [
-      {
-        type: 'html',
-        filename: 'accessibility/axe-report.html'
-      }
-    ]
-  });
-  
-  await reporter.run(results);
-  
+
+  const htmlReport = axeReporter.createHtmlReport({ results });
+  fs.writeFileSync('accessibility/axe-report.html', htmlReport);
 }
 
 runTests();
+
