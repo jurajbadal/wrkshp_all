@@ -30,6 +30,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: accessibility-report
-        path: accessibility/plus-report.html  
+        path: accessibility/report.html  
         
         
