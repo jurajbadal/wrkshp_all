@@ -2,7 +2,7 @@ const pa11y = require('pa11y');
 const fs = require('fs');
 
 const urls = [
-  'https://example.com',
+  'http://37.27.17.198:8084/cs',
   'https://example.com/about',
   'https://example.com/contact'
 ];
