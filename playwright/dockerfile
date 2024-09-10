@@ -10,11 +10,18 @@ COPY playwright.config.ts ./
 # Install dependencies
 RUN npm ci
 
+
 # Copy the rest of the application
 COPY . .
 
 # Install Playwright browsers
 RUN npx playwright install
+RUN npm install axe-playwright@latest
+# Install additional dependencies
+# RUN npm install fs 
+RUN npm install @axe-core/playwright
+RUN npm install @types/axe-core 
+RUN npm install axe-html-reporter
 
 # Set the command to run tests
 CMD ["npx", "playwright", "test"]

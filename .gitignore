@@ -27,3 +27,10 @@ node_modules/
 playwright-report
 *.gs
 *.xml
+accessibility
+*.js
+U_Influx
+*.ts
+.*.ts
+playwright/.DS_Store
+.*.json

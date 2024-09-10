@@ -3,12 +3,12 @@ services:
     build:
       context: ./playwright
       dockerfile: Dockerfile
+    
     volumes:
       - ./playwright:/app/playwright
       - /app/playwright/node_modules
     working_dir: /app/playwright
-    command: npx playwright test
-  
+    command: npx playwright test --browser=all  
 
     
     
