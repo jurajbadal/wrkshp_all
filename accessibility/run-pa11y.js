@@ -1,6 +1,6 @@
-const pa11y = require('pa11y');
-const fs = require('fs');
-const axeReporter = require('axe-reporter-html');
+import pa11y from 'pa11y';
+import fs from 'fs/promises';
+import createHTMLReport from 'axe-reporter-html';
 
 const urls = [
   'https://example.com',
@@ -18,9 +18,8 @@ async function runTests() {
     results.push(result);
   }
 
-  const htmlReport = axeReporter.createHtmlReport({ results });
-  fs.writeFileSync('accessibility/axe-report.html', htmlReport);
+  const html = await createHTMLReport(results);
+  await fs.writeFile('accessibility/axe-report.html', html);
 }
 
 runTests();
-
