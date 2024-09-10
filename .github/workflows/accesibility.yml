@@ -24,7 +24,7 @@ jobs:
     
 
     - name: Run Pa11y
-      run: node run-pa11y.js
+      run: node accessibity/run-pa11y.js
       
       
         
