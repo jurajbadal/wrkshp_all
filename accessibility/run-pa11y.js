@@ -22,7 +22,7 @@ async function runTests() {
   }
   const reportDir = 'accessibility';
   await fs.mkdir(reportDir, { recursive: true });
-  await fs.writeFile(path.join(reportDir, 'report.html'), fullReport);
+  await fs.writeFile(path.join(reportDir, 'plus-report.html'), fullReport);
 }
 
 runTests();
