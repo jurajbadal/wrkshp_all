@@ -1,6 +1,9 @@
 FROM python:3.9-alpine
 WORKDIR /app
+COPY broken_links.py .
+COPY sitemap.py .
 COPY requirements.txt .
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-CMD ["python", "hello_world.py"]
+CMD ["sh", "-c", "python broken_links.py && python sitemap.py"]
