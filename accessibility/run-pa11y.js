@@ -3,9 +3,8 @@ import htmlReporter from 'pa11y-reporter-html-plus';
 import { promises as fs } from 'fs';
 
 const urls = [
-  'http://test-app-01.gts.bootiq-preview.eu/',
-  'https://test.aliveplatform.com/',
-  'https://aliveplatform.com/'
+  'https://isic.sk/'
+  
   
 ];
 
