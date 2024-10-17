@@ -1,0 +1,4172 @@
+{
+	"info": {
+		"_postman_id": "0db36b1d-f8d5-4dc0-9d94-f9766f523eed",
+		"name": "Communication Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1582224"
+	},
+	"item": [
+		{
+			"name": "Enums",
+			"item": [
+				{
+					"name": "List card types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/card-types",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"enums",
+								"card-types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - List card types",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/card-types",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"enums",
+										"card-types"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"code\": \"ISIC\",\n            \"name\": \"ISIC\"\n        },\n        {\n            \"code\": \"ISIC_SCHOLAR\",\n            \"name\": \"ISIC Scholar\"\n        },\n        {\n            \"code\": \"ITIC\",\n            \"name\": \"ITIC\"\n        },\n        {\n            \"code\": \"IYTC\",\n            \"name\": \"IYTC\"\n        },\n        {\n            \"code\": \"ALIVE_STUDENT\",\n            \"name\": \"Alive Student\"\n        },\n        {\n            \"code\": \"ALIVE_STAFF\",\n            \"name\": \"Alive Staff\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List communication channels",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/communication-channels",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"enums",
+								"communication-channels"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - List communication channels",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/communication-channels",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"enums",
+										"communication-channels"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"code\": \"EMAIL\",\n            \"name\": \"Email\"\n        },\n        {\n            \"code\": \"PUSH_NOTIFICATION\",\n            \"name\": \"Push notification\"\n        },\n        {\n            \"code\": \"INAPP\",\n            \"name\": \"INAPP\"\n        },\n        {\n            \"code\": \"SMS\",\n            \"name\": \"SMS\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List message groups",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/message-groups",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"enums",
+								"message-groups"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - List message groups",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/message-groups",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"enums",
+										"message-groups"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"code\": \"ONLINE_ORDERS\",\n            \"name\": \"Online orders\"\n        },\n        {\n            \"code\": \"ISS_ORDERS\",\n            \"name\": \"ISS orders\"\n        },\n        {\n            \"code\": \"ALIVE_PROFILE\",\n            \"name\": \"Alive profile\"\n        },\n        {\n            \"code\": \"ALIVE_PARTNERS\",\n            \"name\": \"Alive partners\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List message group's categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/message-groups/{{groupId}}/message-categories",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"enums",
+								"message-groups",
+								"{{groupId}}",
+								"message-categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - List message group's categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/message-groups/{{groupId}}/message-categories",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"enums",
+										"message-groups",
+										"{{groupId}}",
+										"message-categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"code\": \"BEFORE_SUBMITTING_ORDER\",\n            \"name\": \"Before submitting order\"\n        },\n        {\n            \"code\": \"ORDER_PROCESSING\",\n            \"name\": \"Order processing\"\n        },\n        {\n            \"code\": \"WELCOMING\",\n            \"name\": \"Welcoming\"\n        },\n        {\n            \"code\": \"RETENTION\",\n            \"name\": \"Retention\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List message group's conditions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/message-groups/{{groupId}}/conditions",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"enums",
+								"message-groups",
+								"{{groupId}}",
+								"conditions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - List message group´s conditions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/message-groups/{{groupId}}/conditions",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"enums",
+										"message-groups",
+										"{{groupId}}",
+										"conditions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"code\": \"CARD_TYPE\",\n            \"name\": \"Product\"\n        },\n        {\n            \"code\": \"REQUEST_TYPE\",\n            \"name\": \"Request type\"\n        },\n        {\n            \"code\": \"AGE_GROUP\",\n            \"name\": \"Card holder\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List request types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/request-types",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"enums",
+								"request-types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - List request types",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/enums/request-types",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"enums",
+										"request-types"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"code\": \"NEW_DIGITAL_CARD\",\n            \"name\": \"New digital card\"\n        },\n        {\n            \"code\": \"ADDITIONAL_CARD\",\n            \"name\": \"Additional card\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Layouts (Design templates)",
+			"item": [
+				{
+					"name": "List layouts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"email-layouts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "12",
+									"description": "Allowed limits [1, 12, 24, 36]. Default 12",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns user's addresses. This endpoint is called from user's profile (Dashboard / Profile / My profile)."
+					},
+					"response": [
+						{
+							"name": "200 - List layouts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "12",
+											"description": "Allowed limits [1, 12, 24, 36]. Default 12",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 05 Oct 2020 14:14:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.29 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "208"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"active_version_id\": 10,\n            \"name\": \"ISIC default template\",\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\n            \"created_by\": \"Jakub Hrábek\",\n            \"updated_at\": null,\n            \"updated_by\": null\n        }\n    ],\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 1,\n            \"count\": 1,\n            \"per_page\": 12,\n            \"current_page\": 1,\n            \"total_pages\": 1,\n            \"links\": {}\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get layout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{layoutId}}",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"email-layouts",
+								"{{layoutId}}"
+							]
+						},
+						"description": "Returns user's addresses. This endpoint is called from user's profile (Dashboard / Profile / My profile)."
+					},
+					"response": [
+						{
+							"name": "200 - Get layout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{layoutId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts",
+										"{{layoutId}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 05 Oct 2020 14:14:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.29 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "208"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"active_version_id\": 10,\n        \"name\": \"ISIC default template\",\n        \"body\": \"<html>Hello world <br> {{email_content}}</html>\",\n        \"l10ns\": [\n            {\n                \"language_code\": \"cs\",\n                \"body\": \"<html>Ahoj světe <br> {{email_content}}</html>\"\n            }\n        ],\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": null,\n        \"updated_by\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Add layout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ISIC Default template\",\r\n    \"body\": \"<html>Hello world <br> {{email_content}}</html>\",\r\n    \"l10ns\": [\r\n        {\r\n            \"language_code\": \"cs\",\r\n            \"body\": \"<html>Ahoj světe <br> {{email_content}}</html>\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"email-layouts"
+							]
+						},
+						"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when creating new address.\n\n### Request Body Parameters\n\n| **Name** | **Type** | **Required** | **Description** |\n| --- | --- | --- | --- |\n| type | ENUM | yes | \\[ENUM\\] Address |\n| main | bool | no | True if address is main for communication, only one address can be main |\n| address_line_1 | string | yes |  |\n| address_line_2 | string | no |  |\n| city | string | yes |  |\n| district | string | no |  |\n| postal_code | string | yes |  |\n| country | ENUM | yes | \\[ENUM\\] Country |"
+					},
+					"response": [
+						{
+							"name": "201 - Layout added",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ISIC Default template\",\r\n    \"body\": \"<html>Hello world <br> {{email_content}}</html>\",\r\n    \"l10ns\": [\r\n        {\r\n            \"language_code\": \"cs\",\r\n            \"body\": \"<html>Ahoj světe <br> {{email_content}}</html>\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"active_version_id\": 10,\n        \"name\": \"ISIC default template\",\n        \"body\": \"<html>Hello world <br> {{email_content}}</html>\",\n        \"l10ns\": [\n            {\n                \"language_code\": \"cs\",\n                \"body\": \"<html>Ahoj světe <br> {{email_content}}</html>\"\n            }\n        ],\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": null,\n        \"updated_by\": null\n    }\n}"
+						},
+						{
+							"name": "422 -  {{email_content}} variable is missing",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ISIC Default template\",\r\n    \"body\": \"<html>Hello world</html>\",\r\n    \"l10ns\": [\r\n        {\r\n            \"language_code\": \"cs\",\r\n            \"body\": \"<html>Ahoj světe</html>\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"message\": \"Variable {{email_content}} is missing.\",\n            \"code\": \"EMAIL_TEMPLATE_VARIABLE_MISSING\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "422 - Missing required parameters",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"body\": \"<html>Hello world <br> {{email_content}}</html>\",\r\n    \"l10ns\": [\r\n        {\r\n            \"language_code\": \"cs\",\r\n            \"body\": \"<html>Ahoj světe <br> {{email_content}}</html>\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"property_name\": \"name\",\n            \"message\": \"Tato hodnota nesmí být prázdná.\",\n            \"code\": \"IS_BLANK_ERROR\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update layout",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ISIC Default template updated\",\r\n    \"body\": \"<html>Hello world updated <br> {{email_content}}</html>\",\r\n    \"l10ns\": [\r\n        {\r\n            \"language_code\": \"cs\",\r\n            \"body\": \"<html>Ahoj světe updated <br> {{email_content}}</html>\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{emailLayoutId}}",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"email-layouts",
+								"{{emailLayoutId}}"
+							]
+						},
+						"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+					},
+					"response": [
+						{
+							"name": "200 - Update layout",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ISIC Default template updated\",\r\n    \"body\": \"<html>Hello world updated <br> {{email_content}}</html>\",\r\n    \"l10ns\": [\r\n        {\r\n            \"language_code\": \"cs\",\r\n            \"body\": \"<html>Ahoj světe updated <br> {{email_content}}</html>\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{emailLayoutId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts",
+										"{{emailLayoutId}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"active_version_id\": 11,\n        \"name\": \"ISIC default template updated\",\n        \"body\": \"<html>Hello world updated <br> {{email_content}}</html>\",\n        \"l10ns\": [\n            {\n                \"language_code\": \"cs\",\n                \"body\": \"<html>Ahoj světe updated <br> {{email_content}}</html>\"\n            }\n        ],\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": \"2024-08-08T12:32:10+00:00\",\n        \"updated_by\": \"Jakub Hrábek\"\n    }\n}"
+						},
+						{
+							"name": "422 -  {{email_content}} variable is missing",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ISIC Default template updated\",\r\n    \"body\": \"<html>Hello world updated</html>\",\r\n    \"l10ns\": [\r\n        {\r\n            \"language_code\": \"cs\",\r\n            \"body\": \"<html>Ahoj světe updated</html>\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{emailLayoutId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts",
+										"{{emailLayoutId}}"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"message\": \"Variable {{email_content}} is missing.\",\n            \"code\": \"EMAIL_TEMPLATE_VARIABLE_MISSING\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete layout",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{emailLayoutId}}",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"email-layouts",
+								"{{emailLayoutId}}"
+							]
+						},
+						"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when deleting address."
+					},
+					"response": [
+						{
+							"name": "204 - Layout deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{emailLayoutId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts",
+										"{{emailLayoutId}}"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "422 - Layout is currently in use",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/email-layouts/{{emailLayoutId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"email-layouts",
+										"{{emailLayoutId}}"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"message\": \"It's not possible to delete this template because it is currently in use.\",\n            \"code\": \"LAYOUT_IS_IN_USE\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transactional messages",
+			"item": [
+				{
+					"name": "Preview and Send",
+					"item": [
+						{
+							"name": "Preview transactional message",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/preview",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"preview"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200 - Preview transactional message",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/preview",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"preview"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"channel\": \"EMAIL\",\n        \"language_code\": \"cs\",\n        \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n        \"body\": \"<html>Info o objednavce ID {{orderID}}</html>\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Preview transactional message with External data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100,\r\n    \"external_id\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/preview",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"preview"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200 - Preview transactional message with External data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100,\r\n    \"external_id\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/preview",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"preview"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"channel\": \"EMAIL\",\n        \"language_code\": \"cs\",\n        \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n        \"body\": \"<html>Info o objednavce ID 12345</html>\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Send transactional message",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100,\r\n    \"recepient_email\": \"jakub.hrabek@bootiq.io\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/send",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"send"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "204 - Message sent",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100,\r\n    \"recepient_email\": \"jakub.hrabek@bootiq.io\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/send",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"send"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Send transactional message with External data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100,\r\n    \"external_id\": 10,\r\n    \"recepient_email\": \"jakub.hrabek@bootiq.io\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/send",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"send"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "204 - Message sent",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"language_code\": \"cs\",\r\n    \"message_id\": 100,\r\n    \"external_id\": 10,\r\n    \"recepient_email\": \"jakub.hrabek@bootiq.io\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/send",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"send"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Masters",
+					"item": [
+						{
+							"name": "List messages",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ..."
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, .."
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages?group=ONLINE_ORDERS&sortby=msg.id&sortdir=desc&page=1&limit=10",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages"
+									],
+									"query": [
+										{
+											"key": "group",
+											"value": "ONLINE_ORDERS",
+											"description": "(Required) Message group"
+										},
+										{
+											"key": "search",
+											"value": "order",
+											"description": "(Optional) Filter messages by name or ID",
+											"disabled": true
+										},
+										{
+											"key": "category",
+											"value": "RETENTION",
+											"description": "(Optional) Filter messages by category",
+											"disabled": true
+										},
+										{
+											"key": "product",
+											"value": "ISIC",
+											"description": "(Optional) Filter messages by product",
+											"disabled": true
+										},
+										{
+											"key": "request_type",
+											"value": "NEW_DIGITAL_CARD",
+											"description": "(Optional) Filter messages by request type",
+											"disabled": true
+										},
+										{
+											"key": "cardholder",
+											"value": "MINOR",
+											"description": "(Optional) Filter messages by cardholder",
+											"disabled": true
+										},
+										{
+											"key": "active",
+											"value": "0",
+											"description": "(Optional) Filter messages by active",
+											"disabled": true
+										},
+										{
+											"key": "include[]",
+											"value": "all_options",
+											"description": "(Optional) Returns all_* options for filters",
+											"disabled": true
+										},
+										{
+											"key": "include[]",
+											"value": "variants",
+											"description": "(Optional) Returns variants",
+											"disabled": true
+										},
+										{
+											"key": "sortby",
+											"value": "msg.id",
+											"description": "(Optional) Sort by field - msg.name | msg.id | cat.name"
+										},
+										{
+											"key": "sortdir",
+											"value": "desc",
+											"description": "(Optional) Sort by direction"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"description": "Allowed limits [10, 25, 50, 100]"
+										}
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - List messages with variants",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages?group=ONLINE_ORDERS&include[]=variants&limit=10",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages"
+											],
+											"query": [
+												{
+													"key": "group",
+													"value": "ONLINE_ORDERS",
+													"description": "(Required) Message group"
+												},
+												{
+													"key": "search",
+													"value": "Potvrzení",
+													"description": "(Optional) Filter messages by name or ID",
+													"disabled": true
+												},
+												{
+													"key": "category",
+													"value": "BEFORE_SUBMITTING_ORDER",
+													"description": "(Optional) Filter messages by category",
+													"disabled": true
+												},
+												{
+													"key": "product",
+													"value": "ISIC",
+													"description": "(Optional) Filter messages by product",
+													"disabled": true
+												},
+												{
+													"key": "request_type",
+													"value": "NEW_VIRTUAL",
+													"description": "(Optional) Filter messages by request type",
+													"disabled": true
+												},
+												{
+													"key": "active",
+													"value": "1",
+													"description": "(Optional) Filter messages by active",
+													"disabled": true
+												},
+												{
+													"key": "cardholder",
+													"value": "MAJOR",
+													"description": "(Optional) Filter messages by cardholder",
+													"disabled": true
+												},
+												{
+													"key": "include[]",
+													"value": "all_options",
+													"description": "(Optional) Returns all_* options for filters",
+													"disabled": true
+												},
+												{
+													"key": "include[]",
+													"value": "variants",
+													"description": "(Optional) Returns variants"
+												},
+												{
+													"key": "sortby",
+													"value": "msg.name",
+													"description": "(Optional) Sort by field",
+													"disabled": true
+												},
+												{
+													"key": "sortdir",
+													"value": "desc",
+													"description": "(Optional) Sort by direction",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "10",
+													"description": "Allowed limits [10, 25, 50, 100]"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1455,\n            \"active\": true,\n            \"name\": \"Document confirmation\",\n            \"trigger_description\": \"Sending when Backoffice validate document\",\n            \"category\": \"Before submitting order\",\n            \"cards\": [\"ISIC\", \"ITIC\", \"ALIVE\"],\n            \"request_types\": [\"NEW_DIGITAL_CARD\"],\n            \"age_groups\": [\"MINOR\", \"MAJOR\"],\n            \"channels\": [\"EMAIL\"],\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\n            \"created_by\": \"Jakub Hrábek\",\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"variants\": [\n                {\n                    \"id\": 62,\n                    \"parent_id\": 1455,\n                    \"active\": true,\n                    \"name\": \"Document confirmation\",\n                    \"trigger_description\": \"Sending when Backoffice validate document\",\n                    \"cards\": [\"ISIC\"],\n                    \"channels\": [\"EMAIL\"],\n                    \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                    \"age_groups\": [\"MAJOR\"],\n                    \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                    \"created_by\": \"system\",\n                    \"updated_at\": null,\n                    \"updated_by\": null,\n                    \"channel_email\": {\n                        \"email_layout_id\": 13,\n                        \"email_layout_name\": \"ISIC Default template CZ1\",\n                        \"subject\": \"Order - Missing Personal ID1\",\n                        \"body\": \"<p>Order info UPDATED</p><p>English version{{first_name_order_owner}}</p>\",\n                        \"attachments\": [],\n                        \"l10ns\": [\n                            {\n                                \"language_code\": \"cs\",\n                                \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                                \"body\": \"<p>Info o objednavce UPDATED CEska</p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                                \"attachments\": []\n                            }\n                        ]\n                    }\n                },\n                {\n                    \"id\": 63,\n                    \"parent_id\": 1455,\n                    \"active\": true,\n                    \"name\": \"Document confirmation\",\n                    \"trigger_description\": \"Sending when Backoffice validate document\",\n                    \"cards\": [\"ITIC\"],\n                    \"channels\": [\"EMAIL\"],\n                    \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                    \"age_groups\": [\"MINOR\"],\n                    \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                    \"created_by\": \"system\",\n                    \"updated_at\": null,\n                    \"updated_by\": null,\n                    \"channel_email\": {\n                        \"email_layout_id\": 13,\n                        \"email_layout_name\": \"ISIC Default template CZ1\",\n                        \"subject\": \"Order - Missing Personal ID1\",\n                        \"body\": \"<p>Order info UPDATED</p><p>English version{{first_name_order_owner}}</p>\",\n                        \"attachments\": [],\n                        \"l10ns\": [\n                            {\n                                \"language_code\": \"cs\",\n                                \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                                \"body\": \"<p>Info o objednavce UPDATED CEska</p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                                \"attachments\": []\n                            }\n                        ]\n                    }\n                }\n            ],\n            \"has_active_variant\": true\n        }\n    ],\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 1,\n            \"count\": 1,\n            \"per_page\": 10,\n            \"current_page\": 1,\n            \"total_pages\": 1,\n            \"links\": {}\n        }\n    }\n}"
+								},
+								{
+									"name": "200 - List messages with variants and all options",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages?group=ONLINE_ORDERS&include[]=all_options&include[]=variants&limit=10",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages"
+											],
+											"query": [
+												{
+													"key": "group",
+													"value": "ONLINE_ORDERS",
+													"description": "(Required) Message group"
+												},
+												{
+													"key": "search",
+													"value": "Potvrzení",
+													"description": "(Optional) Filter messages by name or ID",
+													"disabled": true
+												},
+												{
+													"key": "category",
+													"value": "BEFORE_SUBMITTING_ORDER",
+													"description": "(Optional) Filter messages by category",
+													"disabled": true
+												},
+												{
+													"key": "product",
+													"value": "ISIC",
+													"description": "(Optional) Filter messages by product",
+													"disabled": true
+												},
+												{
+													"key": "request_type",
+													"value": "NEW_VIRTUAL",
+													"description": "(Optional) Filter messages by request type",
+													"disabled": true
+												},
+												{
+													"key": "active",
+													"value": "0",
+													"description": "(Optional) Filter messages by active",
+													"disabled": true
+												},
+												{
+													"key": "cardholder",
+													"value": "MAJOR",
+													"description": "(Optional) Filter messages by cardholder",
+													"disabled": true
+												},
+												{
+													"key": "include[]",
+													"value": "all_options",
+													"description": "(Optional) Returns all_* options for filters"
+												},
+												{
+													"key": "include[]",
+													"value": "variants",
+													"description": "(Optional) Returns variants"
+												},
+												{
+													"key": "sortby",
+													"value": "msg.name",
+													"description": "(Optional) Sort by field",
+													"disabled": true
+												},
+												{
+													"key": "sortdir",
+													"value": "desc",
+													"description": "(Optional) Sort by direction",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "10",
+													"description": "Allowed limits [10, 25, 50, 100]"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1455,\n            \"active\": true,\n            \"name\": \"Document confirmation\",\n            \"trigger_description\": \"Sending when Backoffice validate document\",\n            \"category\": \"Before submitting order\",\n            \"cards\": [\"ISIC\", \"ITIC\"],\n            \"request_types\": [\"NEW_DIGITAL_CARD\"],\n            \"age_groups\": [\"MINOR\", \"MAJOR\"],\n            \"channels\": [\"EMAIL\"],\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\n            \"created_by\": \"Jakub Hrábek\",\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"all_cards\": false,\n            \"all_request_types\": false,\n            \"all_age_groups\": true,\n            \"variants\": [\n                {\n                    \"id\": 62,\n                    \"parent_id\": 1455,\n                    \"active\": true,\n                    \"name\": \"Document confirmation\",\n                    \"trigger_description\": \"Sending when Backoffice validate document\",\n                    \"cards\": [\"ISIC\"],\n                    \"channels\": [\"EMAIL\"],\n                    \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                    \"age_groups\": [\"MAJOR\"],\n                    \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                    \"created_by\": \"system\",\n                    \"updated_at\": null,\n                    \"updated_by\": null,\n                    \"channel_email\": {\n                        \"email_layout_id\": 13,\n                        \"email_layout_name\": \"ISIC Default template CZ1\",\n                        \"subject\": \"Order - Missing Personal ID1\",\n                        \"body\": \"<p>Order info UPDATED</p><p>English version{{first_name_order_owner}}</p>\",\n                        \"attachments\": [],\n                        \"l10ns\": [\n                            {\n                                \"language_code\": \"cs\",\n                                \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                                \"body\": \"<p>Info o objednavce UPDATED CEska</p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                                \"attachments\": []\n                            }\n                        ]\n                    }\n                },\n                {\n                    \"id\": 63,\n                    \"parent_id\": 1455,\n                    \"active\": true,\n                    \"name\": \"Document confirmation\",\n                    \"trigger_description\": \"Sending when Backoffice validate document\",\n                    \"cards\": [\"ITIC\"],\n                    \"channels\": [\"EMAIL\"],\n                    \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                    \"age_groups\": [\"MINOR\"],\n                    \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                    \"created_by\": \"system\",\n                    \"updated_at\": null,\n                    \"updated_by\": null,\n                    \"channel_email\": {\n                        \"email_layout_id\": 13,\n                        \"email_layout_name\": \"ISIC Default template CZ1\",\n                        \"subject\": \"Order - Missing Personal ID1\",\n                        \"body\": \"<p>Order info UPDATED</p><p>English version{{first_name_order_owner}}</p>\",\n                        \"attachments\": [],\n                        \"l10ns\": [\n                            {\n                                \"language_code\": \"cs\",\n                                \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                                \"body\": \"<p>Info o objednavce UPDATED CEska</p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                                \"attachments\": []\n                            }\n                        ]\n                    }\n                }\n            ],\n            \"has_active_variant\": true\n        }\n    ],\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 1,\n            \"count\": 1,\n            \"per_page\": 10,\n            \"current_page\": 1,\n            \"total_pages\": 1,\n            \"links\": {}\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get message",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Get message",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": {{messageId}},\n        \"active\": true,\n        \"name\": \"Document confirmation\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"category\": \"Before submitting order\",\n        \"cards\": [\"ISIC\", \"ITIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID\",\n            \"body\": \"<html>Order info</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 1,\n                    \"filename\": \"terms-and-conditions.pdf\",\n                    \"location\": \"https://example.com/attachments/{{messageId}}/1711112787-terms-and-conditions.pdf\",\n                    \"size\": 1024\n                },\n                {\n                    \"id\": 2,\n                    \"filename\": \"about-us.pdf\",\n                    \"location\": \"https://example.com/attachments/{{messageId}}/1711112794-about-us.pdf\",\n                    \"size\": 2048\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n                    \"body\": \"<html>Info o objednavce</html>\",\n                    \"attachments\": []\n                }\n            ]\n        },\n        \"variants\": [\n            {\n                \"id\": 94,\n                \"parent_id\": {{messageId}},\n                \"active\": false,\n                \"name\": \"Document confirmation\",\n                \"trigger_description\": \"Sending when Backoffice validate document\",\n                \"cards\": [\n                    \"ISIC\"\n                ],\n                \"channels\": [\n                    \"EMAIL\"\n                ],\n                \"request_types\": [\n                    \"NEW_DIGITAL_CARD\"\n                ],\n                \"age_groups\": [\n                    \"MAJOR\"\n                ],\n                \"created_at\": \"2024-04-29T13:57:20+00:00\",\n                \"created_by\": \"jakub.juha@bootiq.io\",\n                \"updated_at\": \"2024-04-30T06:19:37+00:00\",\n                \"updated_by\": \"jana.kubanova\",\n                \"channel_email\": {\n                    \"email_layout_id\": 13,\n                    \"email_layout_name\": \"ISIC Default template CZ1\",\n                    \"subject\": \"Order - Missing Personal ID1\",\n                    \"body\": \"<p>Order info UPDATED</p><p>English version{{first_name_order_owner}}</p>\",\n                    \"attachments\": [],\n                    \"l10ns\": [\n                        {\n                            \"language_code\": \"cs\",\n                            \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                            \"body\": \"<p>Info o objednavce UPDATED CEska</p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                            \"attachments\": []\n                        }\n                    ]\n                }\n            }\n        ],\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": null,\n        \"updated_by\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Update message",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"active\": true,\r\n    \"name\": \"Document confirmation UPDATED\",\r\n    \"channel_email\": {\r\n        \"email_layout_id\": 10,\r\n        \"subject\": \"Order - Missing Personal ID UPDATED\",\r\n        \"body\": \"<html>Order info UPDATED</html>\",\r\n        \"attachments\": [\r\n            \"https://example.com/attachments/{{messageId}}/1711112794-about-us.pdf\",\r\n            \"https://example.com/upload/1711113836-file3.pdf\",\r\n            \"https://example.com/upload/1711113846-file4.pdf\"\r\n        ],\r\n        \"l10ns\": [\r\n            {\r\n                \"language_code\": \"cs\",\r\n                \"subject\": \"Objednavka - chybejici obcansky prukaz UPDATED\",\r\n                \"body\": \"<html>Info o objednavce UPDATED</html>\",\r\n                \"attachments\": []\r\n            }\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Message updated",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"name": "Content-Type",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"active\": true,\r\n    \"name\": \"Document confirmation UPDATED\",\r\n    \"channel_email\": {\r\n        \"email_layout_id\": 10,\r\n        \"subject\": \"Order - Missing Personal ID UPDATED\",\r\n        \"body\": \"<html>Order info UPDATED</html>\",\r\n        \"attachments\": [\r\n            \"https://example.com/attachments/{{messageId}}/1711112794-about-us.pdf\",\r\n            \"https://example.com/upload/1711113836-file3.pdf\",\r\n            \"https://example.com/upload/1711113846-file4.pdf\"\r\n        ],\r\n        \"l10ns\": [\r\n            {\r\n                \"language_code\": \"cs\",\r\n                \"subject\": \"Objednavka - chybejici obcansky prukaz UPDATED\",\r\n                \"body\": \"<html>Info o objednavce UPDATED</html>\",\r\n                \"attachments\": []\r\n            }\r\n        ]\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 1455,\n        \"active\": true,\n        \"name\": \"Document confirmation UPDATED\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"category\": \"Before submitting order UPDATED\",\n        \"cards\": [\"ISIC\", \"ITIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID UPDATED\",\n            \"body\": \"<html>Order info UPDATED</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 2,\n                    \"filename\": \"about-us.pdf\",\n                    \"location\": \"https://example.com/attachments/3/1711112794-about-us.pdf\",\n                    \"size\": 1024\n                },\n                {\n                    \"id\": 5,\n                    \"filename\": \"file3.pdf\",\n                    \"location\": \"https://example.com/attachments/3/1711113836-file3.pdf\",\n                    \"size\": 2048\n                },\n                {\n                    \"id\": 6,\n                    \"filename\": \"file4.pdf\",\n                    \"location\": \"https://example.com/attachments/3/1711113846-file4.pdf\",\n                    \"size\": 2048\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz UPDATED\",\n                    \"body\": \"<html>Info o objednavce UPDATED</html>\",\n                    \"attachments\": []\n                }\n            ]\n        },\n        \"variants\": [\n            {\n                \"id\": 62,\n                \"parent_id\": 1455,\n                \"active\": true,\n                \"name\": \"Document confirmation\",\n                \"trigger_description\": \"Sending when Backoffice validate document\",\n                \"cards\": [\"ISIC\"],\n                \"channels\": [\"EMAIL\"],\n                \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                \"age_groups\": [\"MAJOR\"],\n                \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                \"created_by\": \"system\",\n                \"updated_at\": null,\n                \"updated_by\": null,\n                \"channel_email\": {\n                    \"email_layout_id\": 13,\n                    \"email_layout_name\": \"ISIC Default template CZ\",\n                    \"subject\": \"Order - Missing Personal ID\",\n                    \"body\": \"<p>Order info </p><p>English version{{first_name_order_owner}}</p>\",\n                    \"attachments\": [],\n                    \"l10ns\": [\n                        {\n                            \"language_code\": \"cs\",\n                            \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                            \"body\": \"<p>Info o objednavce </p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                            \"attachments\": []\n                        }\n                    ]\n                }\n            },\n            {\n                \"id\": 63,\n                \"parent_id\": 1455,\n                \"active\": true,\n                \"name\": \"Document confirmation\",\n                \"trigger_description\": \"Sending when Backoffice validate document\",\n                \"cards\": [\"ITIC\"],\n                \"channels\": [\"EMAIL\"],\n                \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                \"age_groups\": [\"MINOR\"],\n                \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                \"created_by\": \"system\",\n                \"updated_at\": null,\n                \"updated_by\": null,\n                \"channel_email\": {\n                    \"email_layout_id\": 13,\n                    \"email_layout_name\": \"ISIC Default template CZ\",\n                    \"subject\": \"Order - Missing Personal ID\",\n                    \"body\": \"<p>Order info </p><p>English version{{first_name_order_owner}}</p>\",\n                    \"attachments\": [],\n                    \"l10ns\": [\n                        {\n                            \"language_code\": \"cs\",\n                            \"subject\": \"Objednavka  -  chybejici obcansky prukaz\",\n                            \"body\": \"<p>Info o objednavce </p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                            \"attachments\": []\n                        }\n                    ]\n                }\n            }\n        ],\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": \"2024-02-02T12:32:10+00:00\",\n        \"updated_by\": \"Jakub Hrábek\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Activate message",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/activate",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"activate"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Message activated",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"name": "Content-Type",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/activate",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"activate"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": {{messageId}},\n        \"active\": true,\n        \"name\": \"Document confirmation UPDATED\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"category\": \"Before submitting order UPDATED\",\n        \"cards\": [\"ISIC\", \"ITIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID UPDATED\",\n            \"body\": \"<html>Order info UPDATED</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 2,\n                    \"file_url\": \"https://example.com/attachments/{{messageId}}/file2.pdf\",\n                    \"filename\": \"file2.pdf\"\n                },\n                {\n                    \"id\": 5,\n                    \"file_url\": \"https://example.com/attachments/{{messageId}}/file3.pdf\",\n                    \"filename\": \"file3.pdf\"\n                },\n                {\n                    \"id\": 6,\n                    \"file_url\": \"https://example.com/attachments/{{messageId}}/file4.pdf\",\n                    \"filename\": \"file4.pdf\"\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz UPDATED\",\n                    \"body\": \"<html>Info o objednavce UPDATED</html>\",\n                    \"attachments\": []\n                }\n            ]\n        },\n        \"variants\": [\n            {\n                \"id\": 62,\n                \"parent_id\": 1455,\n                \"active\": true,\n                \"name\": \"Document confirmation\",\n                \"trigger_description\": \"Sending when Backoffice validate document\",\n                \"cards\": [\"ISIC\"],\n                \"channels\": [\"EMAIL\"],\n                \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                \"age_groups\": [\"MAJOR\"],\n                \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                \"created_by\": \"system\",\n                \"updated_at\": null,\n                \"updated_by\": null,\n                \"channel_email\": {\n                    \"email_layout_id\": 13,\n                    \"email_layout_name\": \"ISIC Default template CZ\",\n                    \"subject\": \"Order - Missing Personal ID\",\n                    \"body\": \"<p>Order info </p><p>English version{{first_name_order_owner}}</p>\",\n                    \"attachments\": [],\n                    \"l10ns\": [\n                        {\n                            \"language_code\": \"cs\",\n                            \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                            \"body\": \"<p>Info o objednavce</p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                            \"attachments\": []\n                        }\n                    ]\n                }\n            },\n            {\n                \"id\": 63,\n                \"parent_id\": 1455,\n                \"active\": true,\n                \"name\": \"Document confirmation\",\n                \"trigger_description\": \"Sending when Backoffice validate document\",\n                \"cards\": [\"ITIC\"],\n                \"channels\": [\"EMAIL\"],\n                \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                \"age_groups\": [\"MINOR\"],\n                \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                \"created_by\": \"system\",\n                \"updated_at\": null,\n                \"updated_by\": null,\n                \"channel_email\": {\n                    \"email_layout_id\": 13,\n                    \"email_layout_name\": \"ISIC Default template CZ\",\n                    \"subject\": \"Order - Missing Personal ID\",\n                    \"body\": \"<p>Order info </p><p>English version{{first_name_order_owner}}</p>\",\n                    \"attachments\": [],\n                    \"l10ns\": [\n                        {\n                            \"language_code\": \"cs\",\n                            \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                            \"body\": \"<p>Info o objednavce </p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                            \"attachments\": []\n                        }\n                    ]\n                }\n            }\n        ],\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": \"2024-02-02T12:32:10+00:00\",\n        \"updated_by\": \"Jakub Hrábek\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Deactivate message",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/deactivate",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"deactivate"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Message deactivated",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"name": "Content-Type",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/deactivate",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"deactivate"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": {{messageId}},\n        \"active\": false,\n        \"name\": \"Document confirmation UPDATED\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"category\": \"Before submitting order UPDATED\",\n        \"cards\": [\"ISIC\", \"ITIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID UPDATED\",\n            \"body\": \"<html>Order info UPDATED</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 2,\n                    \"file_url\": \"https://example.com/attachments/{{messageId}}/file2.pdf\",\n                    \"filename\": \"file2.pdf\"\n                },\n                {\n                    \"id\": 5,\n                    \"file_url\": \"https://example.com/attachments/{{messageId}}/file3.pdf\",\n                    \"filename\": \"file3.pdf\"\n                },\n                {\n                    \"id\": 6,\n                    \"file_url\": \"https://example.com/attachments/{{messageId}}/file4.pdf\",\n                    \"filename\": \"file4.pdf\"\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz UPDATED\",\n                    \"body\": \"<html>Info o objednavce UPDATED</html>\",\n                    \"attachments\": []\n                }\n            ]\n        },\n        \"variants\": [\n            {\n                \"id\": 62,\n                \"parent_id\": {{messageId}},\n                \"active\": true,\n                \"name\": \"Document confirmation\",\n                \"trigger_description\": \"Sending when Backoffice validate document\",\n                \"cards\": [\"ISIC\"],\n                \"channels\": [\"EMAIL\"],\n                \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                \"age_groups\": [\"MAJOR\"],\n                \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                \"created_by\": \"system\",\n                \"updated_at\": null,\n                \"updated_by\": null,\n                \"channel_email\": {\n                    \"email_layout_id\": 13,\n                    \"email_layout_name\": \"ISIC Default template CZ\",\n                    \"subject\": \"Order - Missing Personal ID\",\n                    \"body\": \"<p>Order info UPDATED</p><p>English version{{first_name_order_owner}}</p>\",\n                    \"attachments\": [],\n                    \"l10ns\": [\n                        {\n                            \"language_code\": \"cs\",\n                            \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                            \"body\": \"<p>Info o objednavce </p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                            \"attachments\": []\n                        }\n                    ]\n                }\n            },\n            {\n                \"id\": 63,\n                \"parent_id\": {{messageId}},\n                \"active\": true,\n                \"name\": \"Document confirmation\",\n                \"trigger_description\": \"Sending when Backoffice validate document\",\n                \"cards\": [\"ITIC\"],\n                \"channels\": [\"EMAIL\"],\n                \"request_types\": [\"NEW_DIGITAL_CARD\"],\n                \"age_groups\": [\"MINOR\"],\n                \"created_at\": \"2024-04-03T05:39:38+00:00\",\n                \"created_by\": \"system\",\n                \"updated_at\": null,\n                \"updated_by\": null,\n                \"channel_email\": {\n                    \"email_layout_id\": 13,\n                    \"email_layout_name\": \"ISIC Default template CZ\",\n                    \"subject\": \"Order - Missing Personal ID\",\n                    \"body\": \"<p>Order info </p><p>English version{{first_name_order_owner}}</p>\",\n                    \"attachments\": [],\n                    \"l10ns\": [\n                        {\n                            \"language_code\": \"cs\",\n                            \"subject\": \"Objeddnavka  -  chybejici obcansky prukaz\",\n                            \"body\": \"<p>Info o objednavce </p><p>Cesky: {{first_name_order_owner}}</p><p><br></p><p>Zmenyaa</p>\",\n                            \"attachments\": []\n                        }\n                    ]\n                }\n            }\n        ],\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": \"2024-02-02T12:32:10+00:00\",\n        \"updated_by\": \"Jakub Hrábek\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "List available variables",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variables",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variables"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200 - List available variables",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variables",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variables"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"name\": \"card_type\"\n        },\n        {\n            \"name\": \"serial_number\"\n        },\n        {\n            \"name\": \"product\",\n            \"childs\": [\n                {\"name\": \"name\"},\n                {\"name\": \"amount\"},\n                {\"name\": \"price\"}\n            ]\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Variants",
+					"item": [
+						{
+							"name": "List variants",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants?include[]=all_options",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variants"
+									],
+									"query": [
+										{
+											"key": "include[]",
+											"value": "all_options",
+											"description": "(Optional) Returns all_* options for filters"
+										}
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - List variants",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants"
+											],
+											"query": [
+												{
+													"key": "include[]",
+													"value": "all_options",
+													"description": "(Optional) Returns all_* options for filters",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"parent_id\": {{messageId}},\n            \"active\": true,\n            \"name\": \"Document Confirmation ISIC\",\n            \"cards\": [\"ISIC\"],\n            \"request_types\": [\"NEW_DIGITAL_CARD\"],\n            \"age_groups\": [\"MINOR\", \"MAJOR\"],\n            \"channels\": [\"EMAIL\"],\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\n            \"created_by\": \"Jakub Hrábek\",\n            \"updated_at\": null,\n            \"updated_by\": null\n        },\n        {\n            \"id\": 2,\n            \"parent_id\": {{messageId}},\n            \"active\": false,\n            \"name\": \"Document Confirmation ITIC\",\n            \"cards\": [\"ITIC\"],\n            \"request_types\": [\"NEW_DIGITAL_CARD\"],\n            \"age_groups\": [\"MINOR\", \"MAJOR\"],\n            \"channels\": [\"EMAIL\"],\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\n            \"created_by\": \"Jakub Hrábek\",\n            \"updated_at\": null,\n            \"updated_by\": null\n        }\n    ]\n}"
+								},
+								{
+									"name": "200 - List variants with all options",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants?include[]=all_options",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants"
+											],
+											"query": [
+												{
+													"key": "include[]",
+													"value": "all_options",
+													"description": "(Optional) Returns all_* options for filters"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"parent_id\": {{messageId}},\n            \"active\": true,\n            \"name\": \"Document Confirmation ISIC\",\n            \"cards\": [\"ISIC\"],\n            \"request_types\": [\"NEW_DIGITAL_CARD\"],\n            \"age_groups\": [\"MINOR\", \"MAJOR\"],\n            \"channels\": [\"EMAIL\"],\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\n            \"created_by\": \"Jakub Hrábek\",\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"all_cards\": false,\n            \"all_request_types\": false,\n            \"all_age_groups\": true\n        },\n        {\n            \"id\": 2,\n            \"parent_id\": {{messageId}},\n            \"active\": false,\n            \"name\": \"Document Confirmation ITIC\",\n            \"cards\": [\"ITIC\"],\n            \"request_types\": [\"NEW_DIGITAL_CARD\"],\n            \"age_groups\": [\"MINOR\", \"MAJOR\"],\n            \"channels\": [\"EMAIL\"],\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\n            \"created_by\": \"Jakub Hrábek\",\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"all_cards\": false,\n            \"all_request_types\": false,\n            \"all_age_groups\": true\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Get variant",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variants",
+										"{{variantId}}"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Get variants with included email channel",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}?include[]=channel_email",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants",
+												"{{variantId}}"
+											],
+											"query": [
+												{
+													"key": "include[]",
+													"value": "channel_email"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": {{variantId}},\n        \"parent_id\": {{messageId}},\n        \"active\": true,\n        \"name\": \"Document Confirmation ISIC\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"cards\": [\"ISIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID\",\n            \"body\": \"<html>Order info</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 1,\n                    \"filename\": \"terms-and-conditions.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112787-terms-and-conditions.pdf\",\n                    \"size\": 1024\n                },\n                {\n                    \"id\": 2,\n                    \"filename\": \"about-us.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112794-about-us.pdf\",\n                    \"size\": 2048\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n                    \"body\": \"<html>Info o objednavce</html>\",\n                    \"attachments\": [\n                        {\n                            \"id\": 3,\n                            \"filename\": \"terms-and-conditions.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112801-terms-and-conditions.pdf\",\n                            \"size\": 1024\n                        },\n                        {\n                            \"id\": 4,\n                            \"filename\": \"about-us.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112872-about-us.pdf\",\n                            \"size\": 2048\n                        }\n                    ]\n                }\n            ]\n        },\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": null,\n        \"updated_by\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Add variant",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"active\": true,\r\n    \"name\": \"Document confirmation ISIC\",\r\n    \"cards\": [\"ISIC\"],\r\n    \"request_types\": [\"NEW_DIGITAL_CARD\"],\r\n    \"age_groups\": [\"MINOR\", \"MAJOR\"],\r\n    \"channels\": [\"EMAIL\"],\r\n    \"channel_email\": {\r\n        \"email_layout_id\": 10,\r\n        \"subject\": \"Order - Missing Personal ID\",\r\n        \"body\": \"<html>Order info</html>\",\r\n        \"attachments\": [\r\n            \"https://example.com/upload/1711112787-terms-and-conditions.pdf\",\r\n            \"https://example.com/upload/1711112794-about-us.pdf\"\r\n        ],\r\n        \"l10ns\": [\r\n            {\r\n                \"language_code\": \"cs\",\r\n                \"subject\": \"Objednavka - chybejici obcansky prukaz\",\r\n                \"body\": \"<html>Info o objednavce</html>\",\r\n                \"attachments\": [\r\n                    \"https://example.com/upload/1711112801-terms-and-conditions.pdf\",\r\n                    \"https://example.com/upload/1711112872-about-us.pdf\"\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variants"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "201 - Variant added",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"active\": true,\r\n    \"name\": \"Document confirmation ISIC\",\r\n    \"cards\": [\"ISIC\"],\r\n    \"request_types\": [\"NEW_VIRTUAL\"],\r\n    \"age_groups\": [\"MINOR\", \"MAJOR\"],\r\n    \"channels\": [\"EMAIL\"],\r\n    \"channel_email\": {\r\n        \"email_layout_id\": 10,\r\n        \"subject\": \"Order - Missing Personal ID\",\r\n        \"body\": \"<html>Order info</html>\",\r\n        \"attachments\": [\r\n            \"https://example.com/upload/1711112787-terms-and-conditions.pdf\",\r\n            \"https://example.com/upload/1711112794-about-us.pdf\"\r\n        ],\r\n        \"l10ns\": [\r\n            {\r\n                \"language_code\": \"cs\",\r\n                \"subject\": \"Objednavka - chybejici obcansky prukaz\",\r\n                \"body\": \"<html>Info o objednavce</html>\",\r\n                \"attachments\": [\r\n                    \"https://example.com/upload/1711112801-terms-and-conditions.pdf\",\r\n                    \"https://example.com/upload/1711112872-about-us.pdf\"\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": {{variantId}},\n        \"parent_id\": {{messageId}},\n        \"active\": true,\n        \"name\": \"Document Confirmation ISIC\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"cards\": [\"ISIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID\",\n            \"body\": \"<html>Order info</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 1,\n                    \"filename\": \"terms-and-conditions.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112787-terms-and-conditions.pdf\",\n                    \"size\": 1024\n                },\n                {\n                    \"id\": 2,\n                    \"filename\": \"about-us.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112794-about-us.pdf\",\n                    \"size\": 2048\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n                    \"body\": \"<html>Info o objednavce</html>\",\n                    \"attachments\": [\n                        {\n                            \"id\": 3,\n                            \"filename\": \"terms-and-conditions.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112801-terms-and-conditions.pdf\",\n                            \"size\": 1024\n                        },\n                        {\n                            \"id\": 4,\n                            \"filename\": \"about-us.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112872-about-us.pdf\",\n                            \"size\": 2048\n                        }\n                    ]\n                }\n            ]\n        },\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": null,\n        \"updated_by\": null\n    }\n}"
+								},
+								{
+									"name": "422 - Missing required parameters",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"active\": true,\r\n    \"cards\": [\"ISIC\"],\r\n    \"request_types\": [\"NEW_VIRTUAL\"],\r\n    \"age_groups\": [\"MINOR\", \"MAJOR\"],\r\n    \"channels\": [\"EMAIL\"],\r\n    \"channel_email\": {\r\n        \"email_layout_id\": 10,\r\n        \"subject\": \"Order - Missing Personal ID\",\r\n        \"body\": \"<html>Order info</html>\",\r\n        \"l10ns\": [\r\n            {\r\n                \"language_code\": \"cs\",\r\n                \"subject\": \"Objednavka - chybejici obcansky prukaz\",\r\n                \"body\": \"<html>Info o objednavce</html>\"\r\n            }\r\n        ]\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants"
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"property_name\": \"name\",\n            \"message\": \"Tato hodnota nesmí být prázdná.\",\n            \"code\": \"IS_BLANK_ERROR\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Activate variant",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}/activate",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variants",
+										"{{variantId}}",
+										"activate"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Variant activated",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"name": "Content-Type",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}/activate",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants",
+												"{{variantId}}",
+												"activate"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": {{variantId}},\n        \"parent_id\": {{messageId}},\n        \"active\": true,\n        \"name\": \"Document Confirmation ISIC\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"cards\": [\"ISIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID\",\n            \"body\": \"<html>Order info</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 1,\n                    \"filename\": \"terms-and-conditions.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112787-terms-and-conditions.pdf\",\n                    \"size\": 1024\n                },\n                {\n                    \"id\": 2,\n                    \"filename\": \"about-us.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112794-about-us.pdf\",\n                    \"size\": 2048\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n                    \"body\": \"<html>Info o objednavce</html>\",\n                    \"attachments\": [\n                        {\n                            \"id\": 3,\n                            \"filename\": \"terms-and-conditions.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112801-terms-and-conditions.pdf\",\n                            \"size\": 1024\n                        },\n                        {\n                            \"id\": 4,\n                            \"filename\": \"about-us.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112872-about-us.pdf\",\n                            \"size\": 2048\n                        }\n                    ]\n                }\n            ]\n        },\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": \"2024-02-02T12:32:10+00:00\",\n        \"updated_by\": \"Jakub Hrábek\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Deactivate variant",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}/deactivate",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variants",
+										"{{variantId}}",
+										"deactivate"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Variant deactivated",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"name": "Content-Type",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}/deactivate",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants",
+												"{{variantId}}",
+												"deactivate"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": {{variantId}},\n        \"parent_id\": {{messageId}},\n        \"active\": false,\n        \"name\": \"Document Confirmation ISIC\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"cards\": [\"ISIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID\",\n            \"body\": \"<html>Order info</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 1,\n                    \"filename\": \"terms-and-conditions.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112787-terms-and-conditions.pdf\",\n                    \"size\": 1024\n                },\n                {\n                    \"id\": 2,\n                    \"filename\": \"about-us.pdf\",\n                    \"location\": \"https://example.com/attachments/{{variantId}}/1711112794-about-us.pdf\",\n                    \"size\": 2048\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n                    \"body\": \"<html>Info o objednavce</html>\",\n                    \"attachments\": [\n                        {\n                            \"id\": 3,\n                            \"filename\": \"terms-and-conditions.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112801-terms-and-conditions.pdf\",\n                            \"size\": 1024\n                        },\n                        {\n                            \"id\": 4,\n                            \"filename\": \"about-us.pdf\",\n                            \"location\": \"https://example.com/attachments/{{variantId}}/1711112872-about-us.pdf\",\n                            \"size\": 2048\n                        }\n                    ]\n                }\n            ]\n        },\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": \"2024-02-02T12:32:10+00:00\",\n        \"updated_by\": \"Jakub Hrábek\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Update variant",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"active\": true,\r\n    \"name\": \"Document confirmation\",\r\n    \"cards\": [\"ISIC\", \"ITIC\"],\r\n    \"request_types\": [\"NEW_DIGITAL_CARD\"],\r\n    \"age_groups\": [\"MINOR\", \"MAJOR\"],\r\n    \"channels\": [\"EMAIL\"],\r\n    \"channel_email\": {\r\n        \"email_layout_id\": 10,\r\n        \"subject\": \"Order - Missing Personal ID\",\r\n        \"body\": \"<html>Order info</html>\",\r\n        \"attachments\": [\r\n            \"https://example.com/attachments/{{variantId}}/1711112794-about-us.pdf\",\r\n            \"https://example.com/upload/1711113836-file3.pdf\",\r\n            \"https://example.com/upload/1711113846-file4.pdf\"\r\n        ],\r\n        \"l10ns\": [\r\n            {\r\n                \"language_code\": \"cs\",\r\n                \"subject\": \"Objednavka - chybejici obcansky prukaz\",\r\n                \"body\": \"<html>Info o objednavce</html>\",\r\n                \"attachments\": []\r\n            }\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variants",
+										"{{variantId}}"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "200 - Variant updated",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"active\": true,\r\n    \"name\": \"Document confirmation\",\r\n    \"cards\": [\"ISIC\", \"ITIC\"],\r\n    \"request_types\": [\"NEW_DIGITAL_CARD\"],\r\n    \"age_groups\": [\"MINOR\", \"MAJOR\"],\r\n    \"channels\": [\"EMAIL\"],\r\n    \"channel_email\": {\r\n        \"email_layout_id\": 10,\r\n        \"subject\": \"Order - Missing Personal ID\",\r\n        \"body\": \"<html>Order info</html>\",\r\n        \"attachments\": [\r\n            \"https://example.com/attachments/{{variantId}}/1711112794-about-us.pdf\",\r\n            \"https://example.com/upload/1711113836-file3.pdf\",\r\n            \"https://example.com/upload/1711113846-file4.pdf\"\r\n        ],\r\n        \"l10ns\": [\r\n            {\r\n                \"language_code\": \"cs\",\r\n                \"subject\": \"Objednavka - chybejici obcansky prukaz\",\r\n                \"body\": \"<html>Info o objednavce</html>\",\r\n                \"attachments\": []\r\n            }\r\n        ]\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants",
+												"{{variantId}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": 3,\n        \"parent_id\": {{messageId}},\n        \"active\": true,\n        \"name\": \"Document Confirmation ISIC\",\n        \"trigger_description\": \"Sending when Backoffice validate document\",\n        \"cards\": [\"ISIC\"],\n        \"request_types\": [\"NEW_DIGITAL_CARD\"],\n        \"age_groups\": [\"MINOR\", \"MAJOR\"],\n        \"channels\": [\"EMAIL\"],\n        \"channel_email\": {\n            \"email_layout_id\": 10,\n            \"email_layout_name\": \"Document confirmation layout\",\n            \"subject\": \"Order - Missing Personal ID\",\n            \"body\": \"<html>Order info</html>\",\n            \"attachments\": [\n                {\n                    \"id\": 2,\n                    \"filename\": \"about-us.pdf\",\n                    \"location\": \"https://example.com/attachments/3/1711112794-about-us.pdf\",\n                    \"size\": 1024\n                },\n                {\n                    \"id\": 5,\n                    \"filename\": \"file3.pdf\",\n                    \"location\": \"https://example.com/attachments/3/1711113836-file3.pdf\",\n                    \"size\": 2048\n                },\n                {\n                    \"id\": 6,\n                    \"filename\": \"file4.pdf\",\n                    \"location\": \"https://example.com/attachments/3/1711113846-file4.pdf\",\n                    \"size\": 2048\n                }\n            ],\n            \"l10ns\": [\n                {\n                    \"language_code\": \"cs\",\n                    \"subject\": \"Objednavka - chybejici obcansky prukaz\",\n                    \"body\": \"<html>Info o objednavce</html>\",\n                    \"attachments\": []\n                }\n            ]\n        },\n        \"created_at\": \"2024-01-01T12:32:10+00:00\",\n        \"created_by\": \"Jakub Hrábek\",\n        \"updated_at\": \"2024-02-02T12:32:10+00:00\",\n        \"updated_by\": \"Jakub Hrábek\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete variant",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"transactional-messages",
+										"{{messageId}}",
+										"variants",
+										"{{variantId}}"
+									]
+								},
+								"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+							},
+							"response": [
+								{
+									"name": "204 - Variant deleted",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/transactional-messages/{{messageId}}/variants/{{variantId}}",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"transactional-messages",
+												"{{messageId}}",
+												"variants",
+												"{{variantId}}"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Quick replies",
+			"item": [
+				{
+					"name": "List quick reply layouts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/quick-replies",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"quick-replies"
+							]
+						},
+						"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+					},
+					"response": [
+						{
+							"name": "200 - Load quick reply layouts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/quick-replies",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"quick-replies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"card_type\": \"ISIC\",\n            \"email_layout_id\": 1,\n            \"email_layout_name\": \"ISIC default template\",\n            \"body\": \"<html>Hello world <br> {{email_content}}</html>\"\n        },\n        {\n            \"card_type\": \"ITIC\",\n            \"email_layout_id\": 2,\n            \"email_layout_name\": \"ITIC default template\",\n            \"body\": \"<html>Hello world <br> {{email_content}}</html>\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Assign quick reply layout for card type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"card_type\": \"ALIVE_STAFF\",\r\n    \"email_layout_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/quick-replies",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"quick-replies"
+							]
+						},
+						"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+					},
+					"response": [
+						{
+							"name": "200 - Quick reply layout assigned",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"card_type\": \"ALIVE_STAFF\",\r\n    \"email_layout_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/quick-replies",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"quick-replies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"card_type\": \"ALIVE_STAFF\",\n        \"email_layout_id\": 1,\n        \"email_layout_name\": \"ALIVE_STAFF default template\",\n        \"body\": \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n<head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <title>Simple HTML Email</title>\\r\\n</head>\\r\\n<body style=\\\"font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;\\\">\\r\\n\\r\\n    <table cellpadding=\\\"0\\\" cellspacing=\\\"0\\\" width=\\\"100%\\\" style=\\\"max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);\\\">\\r\\n        <tr>\\r\\n            <td style=\\\"padding: 20px;\\\">\\r\\n                {{ email_content }}\\r\\n            </td>\\r\\n        </tr>\\r\\n    </table>\\r\\n\\r\\n</body>\\r\\n</html>\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Internal",
+			"item": [
+				{
+					"name": "Transactional messages",
+					"item": [
+						{
+							"name": "Dispatch trigger",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ..."
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, .."
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"group\": \"ONLINE_ORDERS\",\r\n    \"trigger_name\": \"EMAIL_VERIFICATION\",\r\n    \"external_id\": 100,\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_details\": {\r\n        \"email_address\": \"alice.pazderkova@mailinator.com\",\r\n        \"registration_keys\": [\r\n            \"f5ZqqI9uRxe8Z6r4wwuJy7:APA91bFh5Ei6-bB_GbWhr39ToGTCUlblVuQKvxnXbbef2PxpSw4Iv1ijQqqPLEkW6qq-FLs5B8GcmyT51a-os0C0eqhJJwTVO9OZfRxUQ6b7H_bQnOeX5C1Jxm879\"\r\n        ]\r\n    },\r\n    \"conditions\": {\r\n        \"card_type\": \"ISIC\",\r\n        \"request_type\": \"NEW_DIGITAL_CARD\",\r\n        \"age_group\": \"MINOR\"\r\n    },\r\n    \"parameters\": {\r\n        \"order_number\": 123456,\r\n        \"first_name_order_owner\": \"Jana\",\r\n        \"last_name_order_ownerrr\": \"Retestová\",\r\n        \"product_name\": \"Nový ISIC průkaz\",\r\n        \"email_verification_code\": 12347,\r\n        \"unfinished_order_url\": \"https://www.bootiq.io\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/transactional-messages/dispatch",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"internal",
+										"transactional-messages",
+										"dispatch"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "204 - Trigger dispatch - email channel",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"group\": \"ONLINE_ORDERS\",\r\n    \"trigger_name\": \"EMAIL_VERIFICATION\",\r\n    \"external_id\": 100,\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_details\": {\r\n        \"email_address\": \"alice.pazderkova@mailinator.com\"\r\n    },\r\n    \"conditions\": {\r\n        \"card_type\": \"ISIC\",\r\n        \"request_type\": \"NEW_DIGITAL_CARD\",\r\n        \"age_group\": \"MINOR\"\r\n    },\r\n    \"parameters\": {\r\n        \"order_number\": 123456,\r\n        \"first_name_order_owner\": \"Jana\",\r\n        \"last_name_order_owner\": \"Retestová\",\r\n        \"product_name\": \"Nový ISIC průkaz\",\r\n        \"email_verification_code\": 12347,\r\n        \"unfinished_order_url\": \"https://www.bootiq.io\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/transactional-messages/dispatch",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"transactional-messages",
+												"dispatch"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "204 - Trigger dispatch - push notification channel",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"group\": \"ALIVE_APP\",\r\n    \"trigger_name\": \"ALIVE_APP_KEY_CARD_EXPIRATION\",\r\n    \"external_id\": 200,\r\n    \"external_entity_name\": \"USER\",\r\n    \"contact_details\": {\r\n        \"registration_keys\": [\r\n            \"f5ZqqI9uRxe8Z6r4wwuJy7:APA91bFh5Ei6-bB_GbWhr39ToGTCUlblVuQKvxnXbbef2PxpSw4Iv1ijQqqPLEkW6qq-FLs5B8GcmyT51a-os0C0eqhJJwTVO9OZfRxUQ6b7H_bQnOeX5C1Jxm879\"\r\n        ]\r\n    },\r\n    \"parameters\": {\r\n        \"card_number\": \"S420123456789A\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/transactional-messages/dispatch",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"transactional-messages",
+												"dispatch"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "204 - Trigger dispatch with array of objects",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"group\": \"ONLINE_ORDERS\",\r\n    \"trigger_name\": \"EMAIL_VERIFICATION\",\r\n    \"external_id\": 100,\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_details\": {\r\n        \"email_address\": \"alice.pazderkova@mailinator.com\"\r\n    },\r\n    \"conditions\": {\r\n        \"card_type\": \"ISIC\",\r\n        \"request_type\": \"ADDITIONAL_CARD\",\r\n        \"age_group\": \"MINOR\"\r\n    },\r\n    \"parameters\": {\r\n        \"order_number\": 123456,\r\n        \"first_name_order_owner\": \"Jana\",\r\n        \"last_name_order_owner\": \"Retestová\",\r\n        \"product_name\": \"Nový ISIC průkaz\",\r\n        \"email_verification_code\": 12347,\r\n        \"unfinished_order_url\": \"https://www.bootiq.io\",\r\n        \"products\": [\r\n            {\"name\": \"ISIC\", \"quantity\": 1, \"price\": 400},\r\n            {\"name\": \"ITIC\", \"quantity\": 1, \"price\": 300}\r\n        ]\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/transactional-messages/dispatch",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"transactional-messages",
+												"dispatch"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "422 - Missing template value",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"group\": \"ONLINE_ORDERS\",\r\n    \"trigger_name\": \"EMAIL_VERIFICATION\",\r\n    \"external_id\": 100,\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_details\": {\r\n        \"email_address\": \"alice.pazderkova@mailinator.com\",\r\n        \"registration_keys\": [\r\n            \"f5ZqqI9uRxe8Z6r4wwuJy7:APA91bFh5Ei6-bB_GbWhr39ToGTCUlblVuQKvxnXbbef2PxpSw4Iv1ijQqqPLEkW6qq-FLs5B8GcmyT51a-os0C0eqhJJwTVO9OZfRxUQ6b7H_bQnOeX5C1Jxm879\"\r\n        ]\r\n    },\r\n    \"conditions\": {\r\n        \"card_type\": \"ISIC\",\r\n        \"request_type\": \"NEW_DIGITAL_CARD\",\r\n        \"age_group\": \"MINOR\"\r\n    },\r\n    \"parameters\": {\r\n        \"order_number\": 123456,\r\n        \"first_name_order_owner\": \"Jana\",\r\n        \"product_name\": \"Nový ISIC průkaz\",\r\n        \"email_verification_code\": 12347,\r\n        \"unfinished_order_url\": \"https://www.bootiq.io\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/transactional-messages/dispatch",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"transactional-messages",
+												"dispatch"
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "content-type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"code\": \"MISSING_FIELD_ERROR\",\n            \"message\": \"Toto pole chybí.\",\n            \"property_name\": \"[parameters][last_name_order_owner]\"\n        }\n    ]\n}"
+								},
+								{
+									"name": "422 - Missing contact details for push notifications",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"group\": \"ONLINE_ORDERS\",\r\n    \"trigger_name\": \"EMAIL_VERIFICATION\",\r\n    \"external_id\": 100,\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_details\": {\r\n        \"email_address\": \"alice.pazderkova@mailinator.com\"\r\n    },\r\n    \"conditions\": {\r\n        \"card_type\": \"ISIC\",\r\n        \"request_type\": \"NEW_DIGITAL_CARD\",\r\n        \"age_group\": \"MINOR\"\r\n    },\r\n    \"parameters\": {\r\n        \"order_number\": 123456,\r\n        \"first_name_order_owner\": \"Jana\",\r\n        \"product_name\": \"Nový ISIC průkaz\",\r\n        \"email_verification_code\": 12347,\r\n        \"unfinished_order_url\": \"https://www.bootiq.io\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/transactional-messages/dispatch",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"transactional-messages",
+												"dispatch"
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "content-type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"code\": \"MISSING_PUSH_NOTIFICATION_CONTACT_DETAILS\",\n            \"message\": \"Nejsou vyplněné všechny potřebné údaje k odeslání push notifikace.\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Quick replies",
+					"item": [
+						{
+							"name": "Dispatch quick reply",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"MISSING_ID_DOCUMENT\",\r\n    \"card_type\": \"ISIC\",\r\n    \"external_id\": \"100\",\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_email\": \"alice.pazderkova@mailinator.com\",\r\n    \"subject\": \"Chybne prilohy\",\r\n    \"body\": \"Vase objednavka {{order_id}} nema citelne potvrzeni o studiu\",\r\n    \"parameters\": {\r\n        \"order_id\": 1234\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/quick-replies/dispatch",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"internal",
+										"quick-replies",
+										"dispatch"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "204 - Quick reply dispatch",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"type\": \"MISSING_ID_DOCUMENT\",\r\n    \"card_type\": \"ISIC\",\r\n    \"external_id\": \"100\",\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_email\": \"alice.pazderkova@mailinator.com\",\r\n    \"subject\": \"Chybne prilohy\",\r\n    \"body\": \"Vase objednavka {{order_id}} nema citelne potvrzeni o studiu\",\r\n    \"parameters\": {\r\n        \"order_id\": 1234\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/quick-replies/dispatch",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"quick-replies",
+												"dispatch"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "422 - Missing parameter",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ...",
+												"type": "text"
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, ..",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"type\": \"MISSING_ID_DOCUMENT\",\r\n    \"card_type\": \"ISIC\",\r\n    \"external_id\": \"100\",\r\n    \"external_entity_name\": \"ORDER\",\r\n    \"contact_email\": \"alice.pazderkova@mailinator.com\",\r\n    \"subject\": \"Chybne prilohy\",\r\n    \"body\": \"Vase objednavka {{order_id}} nema citelne potvrzeni o studiu\",\r\n    \"parameters\": {\r\n        \"order_id\": 1234\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/quick-replies/dispatch",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"quick-replies",
+												"dispatch"
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid data.\",\n    \"data\": [],\n    \"errors\": [\n        {\n            \"code\": \"MISSING_PARAMETER\",\n            \"message\": \"Missing parameter\",\n            \"property_name\": \"[parameters][document_name]\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "List quick reply templates",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ..."
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, .."
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/quick-replies?group=ONLINE_ORDERS",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"internal",
+										"quick-replies"
+									],
+									"query": [
+										{
+											"key": "group",
+											"value": "ONLINE_ORDERS",
+											"description": "(Required) Message group"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200 - Load quick reply templates",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Tenant-Code",
+												"value": "{{tenantCode}}",
+												"description": "Tenant code - CZ, ..."
+											},
+											{
+												"key": "X-User-Lang",
+												"value": "{{language}}",
+												"description": "Language code - cs, .."
+											}
+										],
+										"url": {
+											"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/quick-replies?group=ONLINE_ORDERS",
+											"host": [
+												"{{communicationServiceUrl}}"
+											],
+											"path": [
+												"{{communicationServiceVersion}}",
+												"internal",
+												"quick-replies"
+											],
+											"query": [
+												{
+													"key": "group",
+													"value": "ONLINE_ORDERS",
+													"description": "(Required) Message group"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"template_type\": \"MISSING_ID_DOCUMENT\",\n            \"template_name\": \"Chybí občanský průkaz\",\n            \"subject\": \"predmet\",\n            \"body\": \"Cislo objednavky: {{order_id}}\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Load sent messages - transactional + quick reply messages",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ..."
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, .."
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/messages?group=ONLINE_ORDERS&external_id=100",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"internal",
+								"messages"
+							],
+							"query": [
+								{
+									"key": "group",
+									"value": "ONLINE_ORDERS",
+									"description": "(Required) Message group"
+								},
+								{
+									"key": "external_id",
+									"value": "100",
+									"description": "(Required) ID in group system (OrderId in OO, UserId in AliveAPP, etc.)"
+								},
+								{
+									"key": "externalEntityName",
+									"value": "ORDER",
+									"description": "(Optional) If group has multiple main entitites, e.q. OO has 'ORDER' and 'ABANDONED_ORDER'",
+									"disabled": true
+								},
+								{
+									"key": "channel",
+									"value": "EMAIL",
+									"description": "(Optional) Message channels [EMAIL]",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "Allowed limits [1, 10, 20, 25, 50, 100]. Default 10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Load sent messages - transactional + quick reply messages",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ..."
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, .."
+									}
+								],
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/internal/messages?group=ONLINE_ORDERS&external_id=100",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"internal",
+										"messages"
+									],
+									"query": [
+										{
+											"key": "group",
+											"value": "ONLINE_ORDERS",
+											"description": "(Required) Message group"
+										},
+										{
+											"key": "external_id",
+											"value": "100",
+											"description": "(Required) ID in group system (OrderId in OO, UserId in AliveAPP, etc.)"
+										},
+										{
+											"key": "externalEntityName",
+											"value": "ORDER",
+											"description": "(Optional) If group has multiple main entitites, e.q. OO has 'ORDER' and 'ABANDONED_ORDER'",
+											"disabled": true
+										},
+										{
+											"key": "channel",
+											"value": "EMAIL",
+											"description": "(Optional) Message channels [EMAIL]",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"description": "Allowed limits [1, 10, 20, 25, 50, 100]. Default 10",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"data\": [\r\n        {\r\n            \"subject\": \"Proof of study is not clear\",\r\n            \"type\": \"QUICK_REPLY\",\r\n            \"version\": null, \r\n            \"email_address\": \"jakub.hrabek@bootiq.io\",\r\n            \"created_at\": \"2024-03-01T12:32:10+00:00\",\r\n            \"created_by\": \"System\"\r\n        },\r\n        {\r\n            \"subject\": \"Card printed\",\r\n            \"type\": \"TRANSACTIONAL\",\r\n            \"version\": \"VARIANT\", \r\n            \"email_address\": \"jakub.hrabek@bootiq.io\",\r\n            \"created_at\": \"2024-02-01T12:32:10+00:00\",\r\n            \"created_by\": \"System\"\r\n        },\r\n        {\r\n            \"subject\": \"Order paid\",\r\n            \"type\": \"TRANSACTIONAL\",\r\n            \"version\": \"MASTER\", \r\n            \"email_address\": \"jakub.hrabek@bootiq.io\",\r\n            \"created_at\": \"2024-01-01T12:32:10+00:00\",\r\n            \"created_by\": \"System\"\r\n        }\r\n    ],\r\n    \"meta\": {\r\n        \"pagination\": {\r\n            \"total\": 3,\r\n            \"count\": 1,\r\n            \"per_page\": 15,\r\n            \"current_page\": 1,\r\n            \"total_pages\": 1,\r\n            \"links\": {}\r\n        }\r\n    }\r\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "{{communicationServiceInternalPassword}}",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "{{communicationServiceInternalUsername}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Files",
+			"item": [
+				{
+					"name": "Upload files",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file[0]",
+									"description": "e.g. terms-and-conditions.pdf",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "file[1]",
+									"description": "e.g. about-us.pdf",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/files/upload",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"{{communicationServiceVersion}}",
+								"files",
+								"upload"
+							]
+						},
+						"description": "This endpoint is called from user's profile (Dashboard / Profile / My profile) when editing existing address."
+					},
+					"response": [
+						{
+							"name": "200 - Files uploaded",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Tenant-Code",
+										"value": "{{tenantCode}}",
+										"description": "Tenant code - CZ, ...",
+										"type": "text"
+									},
+									{
+										"key": "X-User-Lang",
+										"value": "{{language}}",
+										"description": "Language code - cs, ..",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file[0]",
+											"description": "e.g. terms-and-conditions.pdf",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "file[1]",
+											"description": "e.g. about-us.pdf",
+											"type": "file",
+											"src": []
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{communicationServiceUrl}}/{{communicationServiceVersion}}/files/upload",
+									"host": [
+										"{{communicationServiceUrl}}"
+									],
+									"path": [
+										"{{communicationServiceVersion}}",
+										"files",
+										"upload"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"filename\": \"terms-and-conditions.pdf\",\n            \"location\": \"https://example.com/upload/1711112787-terms-and-conditions.pdf\",\n            \"size\": 1024\n        },\n        {\n            \"filename\": \"about-us.pdf\",\n            \"location\": \"https://example.com/upload/1711112794-about-us.pdf\",\n            \"size\": 2048\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Health-check",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Tenant-Code",
+						"value": "{{tenantCode}}",
+						"description": "Tenant code - CZ, ...",
+						"type": "text"
+					},
+					{
+						"key": "X-User-Lang",
+						"value": "{{language}}",
+						"description": "Language code - cs, ..",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{communicationServiceUrl}}/health-check",
+					"host": [
+						"{{communicationServiceUrl}}"
+					],
+					"path": [
+						"health-check"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Health-check",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-Code",
+								"value": "{{tenantCode}}",
+								"description": "Tenant code - CZ, ...",
+								"type": "text"
+							},
+							{
+								"key": "X-User-Lang",
+								"value": "{{language}}",
+								"description": "Language code - cs, ..",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{communicationServiceUrl}}/health-check",
+							"host": [
+								"{{communicationServiceUrl}}"
+							],
+							"path": [
+								"health-check"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\",\n    \"env\": \"dev\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "tokenName",
+				"value": "Portal {{environment}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{portalClientId}}",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{portalClientSecret}}",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": true,
+				"type": "boolean"
+			},
+			{
+				"key": "scope",
+				"value": "offline_access",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{keycloakServerUrl}}/auth/realms/AlivePlatform/protocol/openid-connect/token",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "{{keycloakServerUrl}}/auth/realms/AlivePlatform/protocol/openid-connect/auth",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "authorization_code",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "communicationServiceUrl",
+			"value": "https://communication.test.aliveplatform.com",
+			"type": "string"
+		},
+		{
+			"key": "communicationServiceVersion",
+			"value": "v1",
+			"type": "string"
+		}
+	]
+}

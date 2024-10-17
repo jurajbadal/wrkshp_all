@@ -27,9 +27,10 @@ services:
     volumes:
       - ${PWD}/newman/reports:/newman/reports
     command: >
-      run /newman/mycollection.json
-      -r htmlextra
-      --reporter-htmlextra-export /newman/reports/report.html
+      run /newman/your-collection.json
+       -e /newman/your-environment.json
+       -r htmlextra
+       --reporter-htmlextra-export /newman/reports/report.html
     
   python39:
     build: ./python39

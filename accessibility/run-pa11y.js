@@ -3,7 +3,7 @@ import htmlReporter from 'pa11y-reporter-html-plus';
 import { promises as fs } from 'fs';
 
 const urls = [
-  'https://isic.sk/'
+  'https://www.gtsalive.com/'
   
   
 ];

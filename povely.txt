@@ -83,3 +83,6 @@ docker run --rm -v "${PWD}/playwright-report:/app/playwright-report" my-playwrig
 docker-compose up -d grafana influxdb
 
 
+#13 Newman po update bootiq
+docker-compose run --rm newman run your-collection.json -e your-environment.json
+docker-compose run --rm newman run your-collection.json -e your-environment.json -r htmlextra --reporter-htmlextra-export /newman/reports/report.html

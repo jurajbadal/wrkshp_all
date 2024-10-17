@@ -7,3 +7,4 @@ RUN npm install -g newman-reporter-htmlextra
 COPY . .
 
 ENTRYPOINT ["newman"]
+CMD ["run", "your-collection.json", "-e", "your-environment.json"]

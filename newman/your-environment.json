@@ -1,0 +1,555 @@
+{
+	"id": "6f37d9f5-934f-4dd7-8e7d-8ec0dc518ec0",
+	"name": "01 BIQ test",
+	"values": [
+		{
+			"key": "agreementsServiceUrl",
+			"value": "https://agreements.test.gts.bootiq-preview.eu",
+			"enabled": true
+		},
+		{
+			"key": "agreementsUsername",
+			"value": "agreements.uat",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "agreementsPassword",
+			"value": "Rmh5bP!Xh95zCpeS",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "aliveVerifyKeycloakRealm",
+			"value": "AlivePlatform",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "aliveVerifyKeycloakClientId",
+			"value": "dm-alive-verify-api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "aliveVerifyKeycloakClientSecret",
+			"value": "LMFGqpUMAHY60fmDPa012wnYbUBA8taD",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "aliveVerifyApiUsername",
+			"value": "alive-verify-api@biq-test.cz",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "aliveVerifyApiPassword",
+			"value": "test",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayUrl",
+			"value": "https://api.test.gts.bootiq-preview.eu",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayVersion",
+			"value": "v2",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayUsername",
+			"value": "jakub.hrabek",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayPassword",
+			"value": "jYANfYMKs5cfbQbP",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayISSUsername",
+			"value": "iss",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayISSPassword",
+			"value": "wxfJ6pyUQcaXanbI",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewaySubscriptionsUsername",
+			"value": "ae.swyp.youthub",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewaySubscriptionsPassword",
+			"value": "Mfs!T27Urd^Tx+yg",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayVerificationsUsername",
+			"value": "verification_service_api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "apiGatewayVerificationsPassword",
+			"value": "7SDQR75bdGC6jtfW",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsRegion",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsNewTenantCardsSqsUrl",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsNewTenantCardsAccessKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsNewTenantCardsSecretKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUserUpdatedTopicArn",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUserUpdatedAccessKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUserUpdatedSecretKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUpdatedCardsSqsUrl",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUpdatedCardsAccessKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUpdatedCardsSecretKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUpdatedInsurancesSqsUrl",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUpdatedInsurancesAccessKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "awsUpdatedInsurancesSecretKey",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "bm2Url",
+			"value": "https://staging-api.isic.org/bm2/rest/2.0",
+			"enabled": true
+		},
+		{
+			"key": "bm2Username",
+			"value": "bm-cz-b!q",
+			"enabled": true
+		},
+		{
+			"key": "bm2Password",
+			"value": "A5nXvkqMtC@7",
+			"enabled": true
+		},
+		{
+			"key": "communicationServiceUrl",
+			"value": "https://communication.test.gts.bootiq-preview.eu",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "communicationServiceVersion",
+			"value": "v1",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "communicationServiceInternalUsername",
+			"value": "test",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "communicationServiceInternalPassword",
+			"value": "test",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "dmUrl",
+			"value": "https://dm.test.gts.bootiq-preview.eu",
+			"enabled": true
+		},
+		{
+			"key": "dmProviderUsername",
+			"value": "cz.hrabek",
+			"enabled": true
+		},
+		{
+			"key": "dmProviderPassword",
+			"value": "E9mzLHdXDNJAR9MW",
+			"enabled": true
+		},
+		{
+			"key": "dmDiscountConsumerUsername",
+			"value": "dm-uat-cz",
+			"enabled": true
+		},
+		{
+			"key": "dmDiscountConsumerPassword",
+			"value": "xdgNkS7ycfWBAaFn",
+			"enabled": true
+		},
+		{
+			"key": "elasticsearchUrl",
+			"value": "http://test-elastic-01.gts.bootiq-preview.eu:9000",
+			"enabled": true
+		},
+		{
+			"key": "elasticsearchId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "elasticsearchSecret",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "elasticsearchRegion",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "environment",
+			"value": "BIQ-TEST",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "gopayUrl",
+			"value": "https://gw.sandbox.gopay.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "gopayClientId",
+			"value": "1206100214",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "gopayClientSecret",
+			"value": "GmBcBFKF",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "gopayGoid",
+			"value": "8696976156",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "imUrl",
+			"value": "https://insurance.test.gts.bootiq-preview.eu",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "imUsername",
+			"value": "pfm_im",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "imPassword",
+			"value": "QWv6ULdQ8ahZ",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "individualSalesServiceUrl",
+			"value": "https://iss-be.test.gts.bootiq-preview.eu",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "individualSalesServiceUsername",
+			"value": "iss",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "individualSalesServicePassword",
+			"value": "wxfJ6pyUQcaXanbI",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "keycloakServerUrl",
+			"value": "https://iam.test.gts.bootiq-preview.eu",
+			"enabled": true
+		},
+		{
+			"key": "mmUrl",
+			"value": "https://cz-mm.test.gts.bootiq-preview.eu",
+			"enabled": true
+		},
+		{
+			"key": "mmUsername",
+			"value": "etl",
+			"enabled": true
+		},
+		{
+			"key": "mmPassword",
+			"value": "GYBCzz2fWbaZKxTxmD",
+			"enabled": true
+		},
+		{
+			"key": "ncdbUrl",
+			"value": "https://ncdb.test.gts.bootiq-preview.eu",
+			"enabled": true
+		},
+		{
+			"key": "ncdbUsername",
+			"value": "hrabicky",
+			"enabled": true
+		},
+		{
+			"key": "ncdbPassword",
+			"value": "Kokos123",
+			"enabled": true
+		},
+		{
+			"key": "ncdbUsernameRest1.0",
+			"value": "__oo_CZ",
+			"enabled": true
+		},
+		{
+			"key": "ncdbPasswordRest1.0",
+			"value": "dqJmjU6P3eZM5Y9T",
+			"enabled": true
+		},
+		{
+			"key": "ncdbUsernameRest2.0",
+			"value": "otakar.kocka.uat",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "ncdbPasswordRest2.0",
+			"value": "aV=0832601",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "ncdbInternalUsername",
+			"value": "__pfm",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "ncdbInternalPassword",
+			"value": "RYbL2FAk",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "onlineOrderingServiceUrl",
+			"value": "https://online-ordering.test.gts.bootiq-preview.eu",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "oo2Url",
+			"value": "http://test-app-01.gts.bootiq-preview.eu:8082",
+			"enabled": true
+		},
+		{
+			"key": "oo2Username",
+			"value": "oo_api_test_2",
+			"enabled": true
+		},
+		{
+			"key": "oo2Password",
+			"value": "Testtest1*",
+			"enabled": true
+		},
+		{
+			"key": "pay-api-url",
+			"value": "http://test-app-01.gts.bootiq-preview.eu:8091",
+			"enabled": true
+		},
+		{
+			"key": "profileManagerUrl",
+			"value": "https://pm.test.gts.bootiq-preview.eu",
+			"enabled": true
+		},
+		{
+			"key": "profileManagerClientZoneClientId",
+			"value": "profile-manager",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "profileManagerClientZoneClientSecret",
+			"value": "f609d7ae-07ac-440f-9753-6f48f6b17943",
+			"enabled": true
+		},
+		{
+			"key": "pfmInternalEndpointsUsername",
+			"value": "gts",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "pfmInternalEndpointsPassword",
+			"value": "gts",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "portalClientId",
+			"value": "portal-client",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "portalClientSecret",
+			"value": "99e8de7f-4c13-45c7-bcb6-6f8417c93d92",
+			"enabled": true
+		},
+		{
+			"key": "subscriptionsServiceUrl",
+			"value": "https://subscriptions.test.gts.bootiq-preview.eu",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "subscriptionsServiceUsername",
+			"value": "subscription_service_api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "subscriptionsServicePassword",
+			"value": "jY2fYzALCMh6kGwj",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "tenantsServiceUrl",
+			"value": "https://tenants.test.gts.bootiq-preview.eu",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "tenantsServiceUsername",
+			"value": "tenants-service",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "tenantsServicePassword",
+			"value": "Z0I8m7X6;:iP(7&4p&",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "urlShortenerUrl",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "verificationsServiceUrl",
+			"value": "https://verifications.test.gts.bootiq-preview.eu",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "verificationsServiceUsername",
+			"value": "ver",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "verificationsServicePassword",
+			"value": "bGF6eURheXM1",
+			"type": "default",
+			"enabled": true
+		},
+                {
+                        "key": "dmPartnersUrl",
+                        "value": "https://dm.test.gts.bootiq-preview.eu/aliveVerifyApi",
+                        "type": "default",
+                        "enabled": true
+                },
+                {
+                        "key": "dmPartnersVersion",
+                        "value": "v1",
+                        "type": "default",
+                        "enabled": true
+                },
+		{
+			"key": "token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-06-03T07:18:54.739Z",
+	"_postman_exported_using": "Postman/11.1.13"
+}
