@@ -57,7 +57,7 @@ export const options = {
 //http://37.27.17.198:8084/cs
 
 export default function() {
-  http.get('http://test-app-01.gts.bootiq-preview.eu/');
+  http.get('https://www.gtsalive.com/');
   sleep(1);
 }
 /*export default function () {
